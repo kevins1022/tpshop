@@ -1,0 +1,2694 @@
+[ 2015-08-18T09:27:50+08:00 ] 127.0.0.1 /
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+NOTIC: [8] Undefined index: HTTP_REFERER /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 873 行.
+SQL: SHOW COLUMNS FROM `tpshop_records` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `tpshop_records` WHERE ( ip='127.0.0.1' and tag='1' and page='index' )  [ RunTime:0.0018s ]
+SQL: SELECT `time` FROM `tpshop_records` WHERE ( ip='127.0.0.1' and tag='1' and page='index' ) ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `tpshop_records` (`ip`,`country`,`province`,`city`,`isp`,`tag`,`page`,`time`,`url`) VALUES ('127.0.0.1','未分配或者内网IP','','','','1','index','1439861269','www.ts.com/') [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT `id` FROM `tpshop_category` WHERE ( display=1 and pid=0 )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tpshop_slide` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `tpshop_slide` WHERE ( status=1 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_document_product` WHERE ( mark="2" ) ORDER BY id desc LIMIT 6   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_document_product` ORDER BY id desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpshop_document` ORDER BY sale desc LIMIT 6   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( position="4" )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 57 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`ismenu` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` = 1 ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('52') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('52','58','124','57','126') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('107') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('107','104','110','105','109') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('75') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('75','115','116','129','117','118','123','119') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('71') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('71','81','82','83','84','86','87','88') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('72') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('72','92','93','94','96','99','100','101') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('73') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('73','97','98','102','103') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('76') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('76','120','121','122') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('90') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('90','106','108') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('111') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('111','112','114') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( category_id='56' ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( category_id='70' ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002166s ]
+
+[ 2015-08-18T09:28:42+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0031s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2015-08-18T09:28:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2015-08-18T09:30:20+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0036s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-08-18T09:30:21+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2015-08-18T09:32:55+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001682s ]
+
+[ 2015-08-18T09:32:56+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2015-08-18T09:33:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2015-08-18T09:33:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001820s ]
+
+[ 2015-08-18T09:38:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001707s ]
+
+[ 2015-08-18T09:38:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2015-08-18T09:38:53+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0031s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2015-08-18T09:38:53+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2015-08-18T09:40:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0007s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0022s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2015-08-18T09:40:49+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2015-08-18T09:41:09+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0021s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2015-08-18T09:41:09+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2015-08-18T09:42:20+08:00 ] 127.0.0.1 //index.php?s=/Home/User/verify.html&random=0.41037074592895806
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2015-08-18T09:42:23+08:00 ] 127.0.0.1 //index.php?s=/Home/User/verify.html&random=0.4103707459289580
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2015-08-18T09:42:28+08:00 ] 127.0.0.1 //index.php?s=/Home/User/verify.html&random=0.41037074592895806
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2015-08-18T09:42:29+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2015-08-18T09:42:29+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2015-08-18T09:42:30+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0017s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2015-08-18T09:42:31+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2015-08-18T09:42:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2015-08-18T09:42:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2015-08-18T09:42:50+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2015-08-18T09:42:50+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2015-08-18T09:42:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2015-08-18T09:42:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-08-18T09:42:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-08-18T09:42:52+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2015-08-18T09:42:52+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2015-08-18T09:42:53+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014&random=0.08542661764658988
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2015-08-18T09:42:53+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014&random=0.08542661764658988&random=0.12952384445816278
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-08-18T09:42:54+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014&random=0.08542661764658988&random=0.12952384445816278&random=0.2078305520117283
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-08-18T09:42:57+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014&random=0.08542661764658988&random=0.12952384445816278&random=0.2078305520117283&random=0.11510450299829245
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-08-18T09:43:00+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014&random=0.08542661764658988&random=0.12952384445816278&random=0.2078305520117283&random=0.11510450299829245&random=0.2569165111053735
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2015-08-18T09:43:00+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014&random=0.08542661764658988&random=0.12952384445816278&random=0.2078305520117283&random=0.11510450299829245&random=0.2569165111053735&random=0.1591955218464136
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2015-08-18T09:43:01+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.9467549496330321&random=0.9992299838922918&random=0.22955290018580854&random=0.8443911890499294&random=0.4305210658349097&random=0.35419672750867903&random=0.11027182219550014&random=0.08542661764658988&random=0.12952384445816278&random=0.2078305520117283&random=0.11510450299829245&random=0.2569165111053735&random=0.1591955218464136&random=0.3555697447154671
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-08-18T09:43:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2015-08-18T09:43:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2015-08-18T09:43:39+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.8739206024911255
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-08-18T09:43:39+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.8739206024911255&random=0.7972961934283376
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-08-18T09:43:40+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.8739206024911255&random=0.7972961934283376&random=0.32480998104438186
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2015-08-18T09:43:41+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.8739206024911255&random=0.7972961934283376&random=0.32480998104438186&random=0.33781649312004447
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2015-08-18T09:43:42+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.8739206024911255&random=0.7972961934283376&random=0.32480998104438186&random=0.33781649312004447&random=0.881754670990631
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2015-08-18T09:44:38+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0017s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2015-08-18T09:44:39+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2015-08-18T09:44:50+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 72 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2015-08-18T09:44:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2015-08-18T09:48:56+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2015-08-18T09:48:56+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2015-08-18T09:49:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2015-08-18T09:49:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2015-08-18T09:49:14+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000287s ]
+
+[ 2015-08-18T09:49:14+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2015-08-18T09:49:46+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2015-08-18T09:49:46+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2015-08-18T09:49:57+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0022s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2015-08-18T09:49:57+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2015-08-18T09:51:01+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+
+[ 2015-08-18T09:51:04+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0031s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2015-08-18T09:51:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+
+[ 2015-08-18T09:53:07+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2015-08-18T09:53:07+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2015-08-18T09:53:10+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-08-18T09:53:10+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-08-18T09:53:14+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2015-08-18T09:53:15+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003223s ]
+
+[ 2015-08-18T09:53:32+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+
+[ 2015-08-18T09:53:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0025s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2015-08-18T09:53:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2015-08-18T09:54:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0024s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2015-08-18T09:54:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-08-18T09:55:27+08:00 ] 127.0.0.1 /
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+NOTIC: [8] Undefined index: HTTP_REFERER /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 873 行.
+SQL: SHOW COLUMNS FROM `tpshop_records` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tpshop_records` WHERE ( ip='127.0.0.1' and tag='1' and page='index' )  [ RunTime:0.0016s ]
+SQL: SELECT `time` FROM `tpshop_records` WHERE ( ip='127.0.0.1' and tag='1' and page='index' ) ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id` FROM `tpshop_category` WHERE ( display=1 and pid=0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_slide` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_slide` WHERE ( status=1 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_document_product` WHERE ( mark="2" ) ORDER BY id desc LIMIT 6   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tpshop_document_product` ORDER BY id desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_document` ORDER BY sale desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( position="4" )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0022s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 57 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`ismenu` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` = 1 ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('52') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('52','58','124','57','126') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('107') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('107','104','110','105','109') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('75') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('75','115','116','129','117','118','123','119') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('71') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('71','81','82','83','84','86','87','88') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('72') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('72','92','93','94','96','99','100','101') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('73') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('73','97','98','102','103') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('76') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('76','120','121','122') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('90') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('90','106','108') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('111') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('111','112','114') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( category_id='56' ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( category_id='70' ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-08-18T09:55:30+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2015-08-18T09:55:32+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0030s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2015-08-18T09:55:32+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001742s ]
+
+[ 2015-08-18T09:55:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2015-08-18T09:55:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2015-08-18T09:55:36+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2015-08-18T09:55:36+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2015-08-18T09:55:36+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2015-08-18T09:55:36+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2015-08-18T09:55:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2015-08-18T09:55:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2015-08-18T09:55:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2015-08-18T09:55:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2015-08-18T09:55:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2015-08-18T09:55:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2015-08-18T09:55:38+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-08-18T09:55:38+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2015-08-18T09:55:38+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-08-18T09:55:38+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2015-08-18T09:55:38+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2015-08-18T09:55:42+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2015-08-18T09:55:42+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-08-18T09:55:42+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-08-18T09:55:42+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2015-08-18T09:55:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-08-18T09:55:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-08-18T09:55:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2015-08-18T09:55:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-08-18T09:55:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2015-08-18T09:55:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-08-18T09:55:44+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2015-08-18T09:55:44+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197&random=0.608933151466772
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2015-08-18T09:55:44+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197&random=0.608933151466772&random=0.31482505635358393
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2015-08-18T09:55:44+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197&random=0.608933151466772&random=0.31482505635358393&random=0.36016007303260267
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2015-08-18T09:55:45+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197&random=0.608933151466772&random=0.31482505635358393&random=0.36016007303260267&random=0.6487801563926041
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2015-08-18T09:55:45+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197&random=0.608933151466772&random=0.31482505635358393&random=0.36016007303260267&random=0.6487801563926041&random=0.47975606890395284
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-08-18T09:55:45+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197&random=0.608933151466772&random=0.31482505635358393&random=0.36016007303260267&random=0.6487801563926041&random=0.47975606890395284&random=0.09959753789007664
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-08-18T09:55:45+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.6736310820560902&random=0.5997539260424674&random=0.6183985907118767&random=0.7897843746468425&random=0.8974514817818999&random=0.16287012840621173&random=0.5596291995607316&random=0.9228832493536174&random=0.7178559235762805&random=0.08455414604395628&random=0.6150777130387723&random=0.6727681313641369&random=0.032187278382480145&random=0.4046741521451622&random=0.08429645048454404&random=0.8519289076793939&random=0.2978503634221852&random=0.22294435231015086&random=0.5262284458149225&random=0.7105573902372271&random=0.46999256405979395&random=0.04238481889478862&random=0.1263540363870561&random=0.9718672353774309&random=0.7209089025855064&random=0.12121852743439376&random=0.7195753483101726&random=0.9521072830539197&random=0.608933151466772&random=0.31482505635358393&random=0.36016007303260267&random=0.6487801563926041&random=0.47975606890395284&random=0.09959753789007664&random=0.8139070316683501
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2015-08-18T09:55:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0018s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000285s ]
+
+[ 2015-08-18T09:55:49+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2015-08-18T09:55:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0018s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000281s ]
+
+[ 2015-08-18T09:55:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2015-08-18T10:00:19+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0032s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-08-18T10:00:19+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2015-08-18T10:00:20+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+
+[ 2015-08-18T10:00:24+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 77 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2015-08-18T10:00:24+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2015-08-18T10:01:09+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 79 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0021s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-08-18T10:01:09+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009667s ]
+
+[ 2015-08-18T10:01:16+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 79 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0018s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2015-08-18T10:01:16+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2015-08-18T10:01:20+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+
+[ 2015-08-18T10:01:23+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 79 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2015-08-18T10:01:26+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+
+[ 2015-08-18T10:01:29+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 79 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0021s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2015-08-18T10:02:32+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 80 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0024s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2015-08-18T10:02:32+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-08-18T10:02:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 80 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0023s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2015-08-18T10:02:36+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2015-08-18T10:02:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 80 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0022s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2015-08-18T10:02:53+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 80 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0022s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2015-08-18T10:02:54+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2015-08-18T10:02:56+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+
+[ 2015-08-18T10:02:59+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 80 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0020s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2015-08-18T10:06:44+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-08-18T10:06:45+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2015-08-18T10:15:41+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2015-08-18T10:15:41+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2015-08-18T10:16:03+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+NOTIC: [8] Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php 第 45 行.
+
+[ 2015-08-18T10:16:24+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+
+[ 2015-08-18T10:16:27+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-08-18T10:16:39+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.0796342974063009
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2015-08-18T10:16:56+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000280s ]
+
+[ 2015-08-18T10:17:08+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+
+[ 2015-08-18T10:17:10+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2015-08-18T10:17:11+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.5345284240320325
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2015-08-18T10:17:22+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+
+[ 2015-08-18T10:17:26+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2015-08-18T10:17:28+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.540250365389511
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2015-08-18T10:17:28+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.540250365389511&random=0.6742219266016036
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2015-08-18T10:20:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+
+[ 2015-08-18T10:20:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2015-08-18T10:21:02+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html&random=0.3520072321407497
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-08-18T10:21:07+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: INSERT INTO `tpshop_member` (`nickname`,`sex`) VALUES ('18247257349','0') [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2015-08-18T10:21:08+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2015-08-18T10:25:59+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002040s ]
+
+[ 2015-08-18T10:26:01+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2015-08-18T10:26:12+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2015-08-18T10:26:13+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2015-08-18T10:26:15+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2015-08-18T10:26:15+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2015-08-18T10:26:41+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: INSERT INTO `tpshop_member` (`nickname`,`password`,`sex`) VALUES ('18247257349','e10adc3949ba59abbe56e057f20f883e','1') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2015-08-18T10:26:43+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2015-08-18T10:27:54+08:00 ] 127.0.0.1 /index.php?s=/Home/User/
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2015-08-18T10:31:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2015-08-18T10:31:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2015-08-18T10:31:07+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2015-08-18T10:32:26+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-08-18T10:34:03+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2015-08-18T11:07:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001620s ]
+
+[ 2015-08-18T11:08:25+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2015-08-18T11:08:26+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2015-08-18T11:08:54+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2015-08-18T11:09:27+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-08-18T11:09:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000283s ]
+
+[ 2015-08-18T11:10:16+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2015-08-18T11:10:18+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-08-18T11:10:20+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2015-08-18T11:10:25+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2015-08-18T11:10:30+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2015-08-18T11:10:31+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2015-08-18T11:12:21+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2015-08-18T11:12:25+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php:75) /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php:75) /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/UserController.class.php:75) /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2015-08-18T11:12:26+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2015-08-18T11:13:01+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2015-08-18T11:13:05+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2015-08-18T11:13:08+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0049s ]
+
+[ 2015-08-18T11:13:42+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+
+[ 2015-08-18T11:14:35+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+
+[ 2015-08-18T11:15:11+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `nickname` = '18247257349' AND `password` = '01ef91445c07a1b7be75c08414099c16' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-18T11:15:21+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `nickname` = '18247257349' AND `password` = '01ef91445c07a1b7be75c08414099c16' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-18T11:15:41+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `nickname` = '18247257349' AND `password` = '01ef91445c07a1b7be75c08414099c16' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-18T11:15:58+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `nickname` = '18247257349' AND `password` = '01ef91445c07a1b7be75c08414099c16' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+
+[ 2015-08-18T11:16:02+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2015-08-18T11:17:45+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2015-08-18T11:17:48+08:00 ] 127.0.0.1 /index.php?s=/Home/User/
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2015-08-18T11:17:51+08:00 ] 127.0.0.1 /index.php?s=/Home/User/
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2015-08-18T11:19:32+08:00 ] 127.0.0.1 /index.php?s=/Home/User/
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2015-08-18T11:19:36+08:00 ] 127.0.0.1 /index.php?s=/Home/User/logout
+NOTIC: [8] Undefined index: HTTP_REFERER /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Controller.class.php 第 283 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2015-08-18T11:19:37+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2015-08-18T11:19:40+08:00 ] 127.0.0.1 /index.php?s=/Home/User/index
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+
+[ 2015-08-18T11:20:35+08:00 ] 127.0.0.1 /index.php?s=
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+SQL: SHOW COLUMNS FROM `tpshop_records` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tpshop_records` WHERE ( ip='127.0.0.1' and tag='1' and page='index' )  [ RunTime:0.0014s ]
+SQL: SELECT `time` FROM `tpshop_records` WHERE ( ip='127.0.0.1' and tag='1' and page='index' ) ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`pid`,`title` FROM `tpshop_category` WHERE ( display="1"and ismenu="1"  ) ORDER BY sort desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id` FROM `tpshop_category` WHERE ( display=1 and pid=0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_slide` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tpshop_slide` WHERE ( status=1 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_document_product` WHERE ( mark="2" ) ORDER BY id desc LIMIT 6   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tpshop_document_product` ORDER BY id desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tpshop_document` ORDER BY sale desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( position="4" )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: SELECT `value` FROM `tpshop_config` WHERE ( id="40" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_shopcart` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpshop_shopcart` WHERE `uid` = null  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cart /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 57 行.
+SQL: SELECT `type`,`name`,`value` FROM `tpshop_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( ismenu='2' and pid='0' ) ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='77' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='133' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='137' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE ( pid='141' )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`ismenu` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` = 1 ORDER BY sort desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('52') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('52','58','124','57','126') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('107') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('107','104','110','105','109') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('75') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('75','115','116','129','117','118','123','119') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('71') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('71','81','82','83','84','86','87','88') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('72') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('72','92','93','94','96','99','100','101') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('73') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('73','97','98','102','103') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: _ /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Home/Controller/IndexController.class.php 第 151 行.
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('76') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('76','120','121','122') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('90') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('90','106','108') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `pid` IN ('111') AND `ismenu` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE `category_id` IN ('111','112','114') AND `status` = 1 ORDER BY id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( category_id='56' ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_document` WHERE ( category_id='70' ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+

@@ -1,80 +1,64 @@
-<extend name="Base/s4"/>
-
-
+<extend name="Base/common"/>
 <block name="body">
-<div class="mainwrap">
-    
-	<div class="think-form"> <div class="loginform">
-<div class="hd">
-                                    <strong>用户登录</strong><span>已有帐号？点击<a href="{:U("User/register")}">注册</a></span>            </div>
-       
-	<a rel="nofollow" href="{:C('DOMAIN')}" class="img"><img src="__IMG__/login-3.jpg" width='400' height='300'></a></div><div class="login-other">  <form class="form-horizontal login-user"  action="{:U("User/login")}" id="loginform" name="user" method="post">
-          <div class="control-group ">
-            <label class="control-label" for="username">用户名</label>
-            <div class="controls">
-              <em class="user glyphicon glyphicon-user"></em><input type="text" class="v_inp"     id="inputusername" name="username">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="inputPassword">密码</label>
-            <div class="controls">
-             <em class="user glyphicon glyphicon-lock"></em> <input type="password"  class="v_inp" id="inputpassword"    name="password">
-            </div>
-			 <div class="controls Validform_checktip text-warning"></div>
-          </div>
-         <input name="reffer" type="hidden" value="{$referr}">
-          <div class="control-group">
-            <div class="controls">
-              <label class="checkbox">
-                <input type="checkbox"> 自动登陆
-              </label>
-              <br/><button type="submit" id="login_btn_cart" class="v_dark_btn">登 陆</button>
-            </div>
-          </div>
-        </form><p>合作网站账号登录：{:hook('SyncLogin')}
-		</p></div>
+    <div class="head">
+        <include file="Public/jf_nav"/>
+
     </div>
+    <div class="main">
+        <div style="height:38px;"></div>
+        <div class="login_pic"><img src="__PUBLIC__/Jf/images/img_login.jpg"/></div>
+        <div class="login">
+            <div class="tit">
+                <span style="border:0">欢迎回来！请登录</span>
+            </div>
+            <!--tit end-->
+            <form action="__SELF__" method="post" id="log_form">
+                <table border="0" style="margin-top:18px;">
+                    <tr height="60" valign="top">
+                        <td colspan="2">
+                            <input type="text" class="textbox1" placeholder="登录名" name="nickname"/>
 
-</block>
+                            <p>请输入登录名</p>
+                        </td>
+                    </tr>
+                    <tr height="60" valign="top">
+                        <td colspan="2">
+                            <input type="password" class="textbox1" placeholder="密码" name="password"/>
 
-
-<block name="script">
-	<script type="text/javascript">
-
-    	$(document)
-	    	.ajaxStart(function(){
-	    		$("button:submit").addClass("log-in").attr("disabled", true);
-	    	})
-	    	.ajaxStop(function(){
-	    		$("button:submit").removeClass("log-in").attr("disabled", false);
-	    	});
-
-
-    	$("#loginform").submit(function(){
-    		var self = $(this);
-    		$.post(self.attr("action"),self.serialize(),success,"json");
-    		return false;
-
-    		function success(data){
-    			if(data.status){
-    				window.location.href =data.url;
-    			} else {
-    				self.find(".Validform_checktip").text(data.info);
-    				//刷新验证码
-    				$(".reloadverify").click();
-    			}
-    		}
-    	});
-
-		$(function(){
-			var verifyimg = $(".verifyimg").attr("src");
-            $(".reloadverify").click(function(){
-                if( verifyimg.indexOf('?')>0){
-                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
-                }else{
-                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
-                }
-            });
-		});
-	</script>
+                            <p>请输入密码</p>
+                        </td>
+                    </tr>
+                    <tr height="40">
+                        <td colspan="2">
+                            <a href="javascript:;">
+                            <div class="btn" id="log_sub">登录</div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr height="40">
+                        <td class="sure" width="130"><input type="checkbox" class="checkbox"/>记住用户名</td>
+                        <td><a href="forget1.html" style="color:#808080">忘记密码？</a>&nbsp;|&nbsp;<a href="register.html"
+                                                                                                  style="color:#ff0000">免费注册</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <script>
+                $("input").focus(function () {
+                    $(this).css('border-color', '#ff0000');
+                    $(this).parent().find("p").css('display', 'block');
+                });
+                $("input").blur(function () {
+                    $(this).css('border-color', '#b3b3b3');
+                    $(this).parent().find("p").css('display', 'none');
+                });
+                $("#log_sub").click(function(){
+                    $("#log_form").submit();
+                });
+            </script>
+        </div>
+        <!--login end-->
+        <div class="clear" style="height:90px;"></div>
+    </div>
+    <!--main end-->
 </block>
