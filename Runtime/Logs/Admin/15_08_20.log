@@ -1,0 +1,1854 @@
+[ 2015-08-20T08:32:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-08-20T08:32:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0038s ]
+SQL: SELECT `uid`,`nickname`,`account`,`paykey`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`password` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT `nickname` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0028s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440030731','admin在2015-08-20 08:32登录了后台') [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1439944331 LIMIT 1   [ RunTime:0.0042s ]
+SQL: UPDATE `tpshop_member` SET `login`=`login`+1,`last_login_time`='1440030731',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0011s ]
+
+[ 2015-08-20T08:32:13+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0025s ]
+SQL: UPDATE `tpshop_config` SET `value`='http://www.ts.com' WHERE ( name='DOMAIN' ) [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0033s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_document` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.031223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.032164s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.344463s ]
+SQL: select version() as v; [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004832s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.309046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.313408s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:1.313364s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.351926s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002957s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.316455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.318890s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.005441s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.351031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003058s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.316455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.318986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-08-20T08:32:15+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `tpshop_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`url` FROM `tpshop_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '支付管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '信息管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`account`,`paykey`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`password` FROM `tpshop_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2015-08-20T08:32:18+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0019s ]
+SQL: UPDATE `tpshop_config` SET `value`='http://www.ts.com' WHERE ( name='DOMAIN' ) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0040s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.023987s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.855401s ]
+SQL: select version() as v; [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002936s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.828941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.831829s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.831868s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.859088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001302s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.833256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.834473s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.002600s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.858506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001395s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.833256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.834556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2015-08-20T08:32:20+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0032s ]
+SQL: UPDATE `tpshop_config` SET `value`='http://www.ts.com' WHERE ( name='DOMAIN' ) [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0031s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.019249s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.812090s ]
+SQL: select version() as v; [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002474s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.790166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.792547s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.792594s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.814910s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001222s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.793430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.794518s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.001928s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.813817s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001321s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.793430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.794606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-08-20T08:32:20+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%Goods/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Controller/GoodsController.class.php 第 233 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2015-08-20T08:32:22+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/151.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0027s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0038s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '151' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '151' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0016s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-08-20T08:32:30+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/151.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '151' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '151' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2015-08-20T08:32:33+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-08-20T08:32:37+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0031s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0030s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0022s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011854s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.007462s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.007483s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-08-20T08:33:31+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0025s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('礼品活动1','0','20','','0','','','2','1440030811','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440030811','1','0') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0035s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('礼品活动1礼品活动1礼品活动1','200','1000','','1','','中国大陆','','0','','','1.00','','95') [ RunTime:0.0005s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.002000s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.002067s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2015-08-20T08:33:32+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0032s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0038s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-08-20T08:33:37+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0022s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0020s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.005896s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.005917s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2015-08-20T08:33:51+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/au87vpo4mv9eb1i3aic3f7lnr3.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%File/uploadPicture%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_picture` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`path`,`url`,`md5`,`sha1`,`status`,`create_time` FROM `tpshop_picture` WHERE `md5` = '3243e3e33cbb2d0a39d0535a4b5f3182' AND `sha1` = '7166aa0d9fb6f693a90d1156786258ac69c475a0' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2015-08-20T08:33:59+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0036s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('礼品活动2','121','200','','0','','','2','1440030839','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440030839','1','0') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0031s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('礼品活动2礼品活动2礼品活动2礼品活动2礼品活动2礼品活动2','111111','1011111111','','1','','中国大陆','','0','','','1.00','','96') [ RunTime:0.0002s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000494s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-20T08:34:01+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0047s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0036s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-08-20T08:34:03+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0038s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0036s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.007213s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.007234s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2015-08-20T08:34:14+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0023s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('3333','0','333','','0','','','2','1440030854','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440030854','1','0') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0029s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('3333333333','2332332','10333333','','1','','中国大陆','','0','','','1.00','','97') [ RunTime:0.0007s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000612s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-20T08:34:15+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0034s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2015-08-20T08:34:17+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0035s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0020s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0021s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010712s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.005656s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.005674s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-08-20T08:34:25+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/au87vpo4mv9eb1i3aic3f7lnr3.html
+SQL: SHOW COLUMNS FROM `tpshop_picture` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`path`,`url`,`md5`,`sha1`,`status`,`create_time` FROM `tpshop_picture` WHERE `md5` = '21ac8fb56f38f045d070ec239cb97ee3' AND `sha1` = 'b75484ed8a642fc8d919e395403f8b106c29b7e2' LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2015-08-20T08:34:30+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0021s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('222222222','118','22','','0','','','2','1440030870','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440030870','1','0') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0025s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('22222222','222222','10222','','1','','中国大陆','','0','','','1.00','','98') [ RunTime:0.0014s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000540s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-20T08:34:32+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0032s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2015-08-20T08:34:34+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0024s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0025s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0035s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012553s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.007343s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.007370s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2015-08-20T08:34:42+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0025s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('22222222','0','22','','0','','','2','1440030882','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440030882','1','0') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0019s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('2222222222','2222','10222','','1','','中国大陆','','0','','','1.00','','99') [ RunTime:0.0002s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000549s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2015-08-20T08:34:43+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2015-08-20T08:34:45+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0022s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0007s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0021s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011816s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.005910s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.005933s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2015-08-20T08:34:52+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/au87vpo4mv9eb1i3aic3f7lnr3.html
+SQL: SHOW COLUMNS FROM `tpshop_picture` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`path`,`url`,`md5`,`sha1`,`status`,`create_time` FROM `tpshop_picture` WHERE `md5` = '3243e3e33cbb2d0a39d0535a4b5f3182' AND `sha1` = '7166aa0d9fb6f693a90d1156786258ac69c475a0' LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2015-08-20T08:35:02+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0040s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('22222222','121','22','','0','','','2','1440030902','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440030902','1','0') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0023s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0018s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('22222222<img src=\"/Uploads/Picture/2015-08-19/55d42be88e985.jpg\" />','222','1022','','1','','中国大陆','','0','','','1.00','','100') [ RunTime:0.0006s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001045s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-20T08:35:04+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-08-20T08:35:06+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0033s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0008s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0020s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.005754s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.005794s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-08-20T08:35:14+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0030s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('2222222','0','222','','0','','','2','1440030914','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440030914','1','0') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0022s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0012s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('22222222','222','222','','1','','中国大陆','','0','','','1.00','','101') [ RunTime:0.0004s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000713s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-20T08:35:15+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0025s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0035s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2015-08-20T08:37:00+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0028s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0021s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.005530s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.005549s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-08-20T08:37:11+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0032s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('w w','0','22','','0','','','2','1440031031','0','','1','0','0','0','0','0','5','152','1','0','0','0','1440031031','1','0') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0028s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('王薇薇','22','1000','','1','','中国大陆','','0','','','1.00','','102') [ RunTime:0.0002s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000496s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-20T08:37:12+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2015-08-20T08:45:16+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0034s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2015-08-20T08:45:17+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/153/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0041s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0007s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 153 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0032s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.009062s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.009082s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2015-08-20T08:46:18+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004464s ]
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%Article/autoSave%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_menu` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `tpshop_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `tpshop_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0037s ]
+
+[ 2015-08-20T08:47:18+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0046s ]
+
+[ 2015-08-20T08:48:19+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003245s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0059s ]
+
+[ 2015-08-20T08:49:20+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0050s ]
+
+[ 2015-08-20T08:50:21+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0020s ]
+
+[ 2015-08-20T08:51:22+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002235s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0021s ]
+
+[ 2015-08-20T08:52:22+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001759s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0021s ]
+
+[ 2015-08-20T08:53:22+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003559s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0034s ]
+
+[ 2015-08-20T08:53:41+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/au87vpo4mv9eb1i3aic3f7lnr3.html
+SQL: SHOW COLUMNS FROM `tpshop_picture` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`path`,`url`,`md5`,`sha1`,`status`,`create_time` FROM `tpshop_picture` WHERE `md5` = 'cfe17cb1e3e67383281094f32587a353' AND `sha1` = '2f870246cf5dd8a60040104d565c079ca79e280e' LIMIT 1   [ RunTime:0.0015s ]
+SQL: INSERT INTO `tpshop_picture` (`md5`,`sha1`,`path`,`status`,`create_time`) VALUES ('cfe17cb1e3e67383281094f32587a353','2f870246cf5dd8a60040104d565c079ca79e280e','/Uploads/Picture/2015-08-20/55d525152a3d1.png','1','1440032021') [ RunTime:0.0002s ]
+
+[ 2015-08-20T08:53:45+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0033s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('积分换券1','124','20','','0','','','2','1440032025','0','','1','0','0','0','0','0','5','153','1','0','0','0','1440032025','1','0') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0016s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0024s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('积分换券积分换券积分换券','200','200','','1','','中国大陆','','0','','','1.00','','103') [ RunTime:0.0022s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.003812s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.003881s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-20T08:53:47+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0043s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002504s ]
+
+[ 2015-08-20T08:53:49+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/153/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0024s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0023s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0008s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 153 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0046s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017603s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.013115s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.013144s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-08-20T08:54:11+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/au87vpo4mv9eb1i3aic3f7lnr3.html
+SQL: SHOW COLUMNS FROM `tpshop_picture` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`path`,`url`,`md5`,`sha1`,`status`,`create_time` FROM `tpshop_picture` WHERE `md5` = 'cfe17cb1e3e67383281094f32587a353' AND `sha1` = '2f870246cf5dd8a60040104d565c079ca79e280e' LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2015-08-20T08:54:18+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0040s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('积分券2','124','20','','0','','','2','1440032058','0','','1','0','0','0','0','0','5','153','1','0','0','0','1440032058','1','0') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0019s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('积分券2积分券2积分券2积分券2积分券2','200','100','','1','','中国大陆','','0','','','1.00','','104') [ RunTime:0.0023s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.004010s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.004126s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2015-08-20T08:54:20+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0043s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001973s ]
+
+[ 2015-08-20T08:54:22+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/153/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0025s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0026s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0008s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 153 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0047s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017959s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.012635s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.012654s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-08-20T08:54:39+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0022s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('积分券3','0','200','','0','','','2','1440032079','0','','1','0','0','0','0','0','5','153','1','0','0','0','1440032079','1','0') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0026s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('积分券3积分券3','100','10','','1','','中国大陆','','0','','','1.00','','105') [ RunTime:0.0006s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.003889s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.003942s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-20T08:54:41+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0046s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2015-08-20T08:54:43+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/153/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0035s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 153 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0023s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.006394s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.006414s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-08-20T08:54:50+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/au87vpo4mv9eb1i3aic3f7lnr3.html
+SQL: SHOW COLUMNS FROM `tpshop_picture` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`path`,`url`,`md5`,`sha1`,`status`,`create_time` FROM `tpshop_picture` WHERE `md5` = '01acee3ca8b4419b550ac13854bbbb0d' AND `sha1` = '065e41f683a258abdf2c10ee400e242c6da30ec5' LIMIT 1   [ RunTime:0.0022s ]
+SQL: INSERT INTO `tpshop_picture` (`md5`,`sha1`,`path`,`status`,`create_time`) VALUES ('01acee3ca8b4419b550ac13854bbbb0d','065e41f683a258abdf2c10ee400e242c6da30ec5','/Uploads/Picture/2015-08-20/55d5255ab05a7.png','1','1440032090') [ RunTime:0.0007s ]
+
+[ 2015-08-20T08:54:55+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0022s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('s s','125','20','','0','','','2','1440032095','0','','1','0','0','0','0','0','5','153','1','0','0','0','1440032095','1','0') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0020s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('收拾收拾','200','10','','1','','中国大陆','','0','','','1.00','','106') [ RunTime:0.0013s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000805s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-20T08:54:57+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0025s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0019s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2015-08-20T08:54:59+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/153/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0041s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 153 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 86 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0019s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.005592s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.005620s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 210 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-08-20T08:56:00+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0020s ]
+
+[ 2015-08-20T08:56:02+08:00 ] 127.0.0.1 /admin.php?s=/Goods/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0020s ]
+SQL: INSERT INTO `tpshop_document` (`title`,`cover_id`,`price`,`brand`,`sale`,`description`,`percent`,`type`,`create_time`,`link_id`,`name`,`display`,`comment`,`view`,`level`,`id`,`pid`,`model_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('事实上','0','200','','0','','','2','1440032162','0','','1','0','0','0','0','0','5','153','1','0','0','0','1440032162','1','0') [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tpshop_document_product` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0021s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 85 行.
+NOTIC: [8] Undefined variable: arr /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 86 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Model.class.php 第 1147 行.
+SQL: INSERT INTO `tpshop_document_product` (`content`,`jifen`,`stock`,`parameters`,`parameters_value`,`groupprice`,`area`,`shorttitle`,`ads_pic_id`,`pics`,`unionid`,`marketprice`,`mark`,`id`) VALUES ('事实上事实上事实上','111111','1000','','1','','中国大陆','','0','','','1.00','','107') [ RunTime:0.0002s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.000622s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-20T08:56:04+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0061s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002853s ]
+
+[ 2015-08-20T08:58:39+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0035s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002523s ]
+

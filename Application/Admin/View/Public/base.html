@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{$meta_title}|yershop管理平台</title>
+    <title>{$meta_title}|管理平台</title>
     <link href="__ROOT__/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="__CSS__/base.css" media="all">
     <link rel="stylesheet" type="text/css" href="__CSS__/common.css" media="all">
@@ -30,9 +30,13 @@
         <!-- 主导航 -->
         <ul class="main-nav">
             <volist name="__MENU__.main" id="menu">
-                <li class="{$menu.class|default=''}"><a href="{$menu.url|get_nav_url}">{$menu.title}</a></li>
-				
+                <!--<li class="{$menu.class|default=''}"><a href="{$menu.url|get_nav_url}">{$menu.title}</a></li>-->
+
             </volist>
+            <li class=""><a href="/admin.php?s=/Index/index.html">首页</a></li>
+            <li class="current"><a href="/admin.php?s=/Goods/index.html">商品</a></li>
+            <li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>
+            <li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>
 			<li><a href="{:get_index_url()}" target="_blank">前台</a></li>
         </ul>
         <!-- /主导航 -->

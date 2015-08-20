@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><?php echo ($meta_title); ?>|yershop管理平台</title>
+    <title><?php echo ($meta_title); ?>|管理平台</title>
     <link href="/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/base.css" media="all">
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
@@ -33,7 +33,11 @@
 
         <!-- 主导航 -->
         <ul class="main-nav">
-            <?php if(is_array($__MENU__["main"])): $i = 0; $__LIST__ = $__MENU__["main"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><li class="<?php echo ((isset($menu["class"]) && ($menu["class"] !== ""))?($menu["class"]):''); ?>"><a href="<?php echo (get_nav_url($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <?php if(is_array($__MENU__["main"])): $i = 0; $__LIST__ = $__MENU__["main"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><!--<li class="<?php echo ((isset($menu["class"]) && ($menu["class"] !== ""))?($menu["class"]):''); ?>"><a href="<?php echo (get_nav_url($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a></li>--><?php endforeach; endif; else: echo "" ;endif; ?>
+            <li class=""><a href="/admin.php?s=/Index/index.html">首页</a></li>
+            <li class="current"><a href="/admin.php?s=/Goods/index.html">商品</a></li>
+            <li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>
+            <li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>
 			<li><a href="<?php echo get_index_url();?>" target="_blank">前台</a></li>
         </ul>
         <!-- /主导航 -->
@@ -99,7 +103,7 @@
     (function(){
         var ThinkPHP = window.Think = {
             "ROOT"   : "", //当前网站地址
-            "APP"    : "/index.php?s=", //当前项目地址
+            "APP"    : "/admin.php?s=", //当前项目地址
             "PUBLIC" : "/Public", //项目公共目录地址
             "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
             "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],

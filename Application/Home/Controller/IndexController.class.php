@@ -18,62 +18,20 @@ class IndexController extends HomeController {
  
 
 	/**系统首页**/
-   public function index(){
-	
-		/**首页统计代码实现**/
-		if(1==C('IP_TONGJI')){
-		$id="index";
-		$record=IpLookup("",1,$id);
-		}
-		$cate=M('Category');
-		$catelist=$this->menulist() ;
-		$this->assign('categoryq', $catelist);
-		
-		$user=M('category');
-		$id=$user->where('display=1 and pid=0')->getField('id',true);
-		$this->assign('arrr',$id);
-		/** 幻灯片调用* */
-		$slide=get_slide();
-    
-		$this->assign('slide',$slide);
-		/** 限时抢购调用* */
+    public function index()
+    {
 
-		$timelist=$this->timelist();
-		$this->assign('timelist',$timelist);
-		/** 最新上架调用**/
-		$bytime=$this->bytime();
-		$this->assign('bytime',$bytime);
-		$totalsales=$this->totalsales();
-		/** 热卖调用*/
-		$this->assign('totalsales',$totalsales);
-		$Carousel=$this->Carousel();
-		$this->assign('carousel',$Carousel);
-		/** 热词调用**/
-		$hotsearch=$this->getHotsearch();
-		$this->assign('hotsearch',$hotsearch);
-		/**购物车调用**/
-		$cart=R("shopcart/usercart");
-		$this->assign('usercart',$cart);
-		if(!session('user_auth')){$usercart=$_SESSION['cart'];
-		$this->assign('usercart',$usercart);
+        $jflp = M('document')->order('id desc')->where("category_id='151'")->limit(8)->select();
+        $this->jflp = $jflp;
+        $lphd= M('document')->order('id desc')->where("category_id='152'")->limit(8)->select();
+        $this->lphd = $lphd;
+        $jfhq = M('document')->order('id desc')->where("category_id='153'")->limit(8)->select();
+        $this->jfhq = $jfhq;
 
-		}
-		/** 底部分类调用**/
-		$menulist=R('Service/AllMenu');
-		$this->assign('footermenu',$menulist);
-		$tree=$this->maketree() ;
 
-		$this->assign ( 'category', $tree);
-/** 公告分类调用**/
-		$notice=M('document')->order('id desc')->where("category_id='56'")->limit(8)->select();
-		$this->assign('notice',$notice);
-/** 活动分类调用**/
-		$activity=M('document')->order('id desc')->where("category_id='70'")->limit(8)->select();
-		$this->assign('activity',$activity);
-
-		$this->meta_title = '首页';
-		$this->display();
-		}
+        $this->meta_title = '首页';
+        $this->display();
+    }
 		/**无限极分类菜单调用**/
  public function menulist(){
 		$field = 'id,name,pid,title';

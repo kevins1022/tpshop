@@ -93,54 +93,24 @@
         </div><!--search end-->
         <div class="index_list">
             <ul>
+
+                <?php foreach($jflp as $key => $value): ?>
                 <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_01.jpg) no-repeat;"><img src="/Public/Jf/images/end.png"></div><!--pic end-->
-                    <div class="tit">自行车包前梁包横梁手机包</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
+                    <?php
+ $jfdhPro = M('DocumentProduct')->find($value['id']); ?>
+                    <?php
+ $pic=M('Picture')->field('path')->find($value['cover_id']); ?>
+                    <div class="pic" style="background:url(<?php echo $pic['path']; ?>) no-repeat;">
+                        <img src=""></div>
+                    <div class="tit">
+                        <?php
+ echo $value['title']; ?>
+                    </div>
+                    <a href="<?php echo U('article/detail',array('id'=>$value['id']));?>"><div class="btn">立即购买</div></a>
+                    <div class="points"><span><?php echo $jfdhPro['jifen']; ?></span>积分&nbsp;或&nbsp;<span><?php echo $jfdhPro['marketprice']; ?></span>RMB</div>
                 </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_02.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">自行车灯前灯充电强光手电筒</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_03.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">骑行背包自行车包骑行装备</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_04.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">自行车手机架支架手机座</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_05.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">酷改自行车尾灯山地车尾灯</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_06.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">骑行眼镜山地自行车运动眼镜</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_07.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">山地自行车头盔男女款</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_08.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">骑行车前包单车上管包</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
+                <?php endforeach; ?>
+
             </ul>
             <div class="clear"></div>
         </div><!--index_list end-->
@@ -153,64 +123,35 @@
         </div><!--search end-->
         <div class="index_list">
             <ul>
+                <?php foreach($lphd as $key => $value): ?>
                 <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_01.jpg) no-repeat;"><img src="/Public/Jf/images/end.png"></div><!--pic end-->
-                    <div class="tit">自行车包前梁包横梁手机包</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
+                    <?php
+ $jfdhPro = M('DocumentProduct')->find($value['id']); ?>
+                    <?php
+ $pic=M('Picture')->field('path')->find($value['cover_id']); ?>
+                    <div class="pic" style="background:url(<?php echo $pic['path']; ?>) no-repeat;">
+                        <img src=""></div>
+                    <div class="tit">
+                        <?php
+ echo $value['title']; ?>
+                    </div>
+                    <a href="<?php echo U('article/detail',array('id'=>$value['id']));?>"><div class="btn">立即购买</div></a>
+                    <div class="points"><span><?php echo $jfdhPro['jifen']; ?></span>积分&nbsp;或&nbsp;<span><?php echo $jfdhPro['marketprice']; ?></span>RMB</div>
                 </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_02.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">自行车灯前灯充电强光手电筒</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_03.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">骑行背包自行车包骑行装备</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_04.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">自行车手机架支架手机座</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_05.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">酷改自行车尾灯山地车尾灯</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_06.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">骑行眼镜山地自行车运动眼镜</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_07.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">山地自行车头盔男女款</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
-                <li>
-                    <div class="pic" style="background:url(/Public/Jf/images/img_08.jpg) no-repeat;"></div><!--pic end-->
-                    <div class="tit">骑行车前包单车上管包</div>
-                    <a href=""><div class="btn">立即购买</div></a>
-                    <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
-                </li>
+                <?php endforeach; ?>
             </ul>
             <div class="clear"></div>
         </div><!--index_list end-->
         <div class="index_title"><img src="/Public/Jf/images/index_tit_03.png"></div><!--index_title end-->
         <div class="index_list2">
             <ul>
-                <li><a href=""><img src="/Public/Jf/images/coupon_01.png"></a></li>
-                <li><a href=""><img src="/Public/Jf/images/coupon_02.png"></a></li>
-                <li><a href=""><img src="/Public/Jf/images/coupon_03.png"></a></li>
-                <li><a href=""><img src="/Public/Jf/images/coupon_04.png"></a></li>
+                <?php foreach($jfhq as $key => $value): ?>
+                <?php
+ $jfdhPro = M('DocumentProduct')->find($value['id']); ?>
+                <?php
+ $pic=M('Picture')->field('path')->find($value['cover_id']); ?>
+                <li><a href="<?php echo U('article/detail',array('id'=>$value['id']));?>"><img src="<?php echo $pic['path']; ?>"></a></li>
+               <?php endforeach; ?>
             </ul>
             <div class="clear"></div>
         </div><!--index_list2 end-->

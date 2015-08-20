@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><?php echo ($meta_title); ?>|yershop管理平台</title>
+    <title><?php echo ($meta_title); ?>|管理平台</title>
     <link href="/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/base.css" media="all">
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
@@ -29,7 +29,11 @@
 
         <!-- 主导航 -->
         <ul class="main-nav">
-            <?php if(is_array($__MENU__["main"])): $i = 0; $__LIST__ = $__MENU__["main"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><li class="<?php echo ((isset($menu["class"]) && ($menu["class"] !== ""))?($menu["class"]):''); ?>"><a href="<?php echo (get_nav_url($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <?php if(is_array($__MENU__["main"])): $i = 0; $__LIST__ = $__MENU__["main"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><!--<li class="<?php echo ((isset($menu["class"]) && ($menu["class"] !== ""))?($menu["class"]):''); ?>"><a href="<?php echo (get_nav_url($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a></li>--><?php endforeach; endif; else: echo "" ;endif; ?>
+            <li class=""><a href="/admin.php?s=/Index/index.html">首页</a></li>
+            <li class="current"><a href="/admin.php?s=/Goods/index.html">商品</a></li>
+            <li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>
+            <li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>
 			<li><a href="<?php echo get_index_url();?>" target="_blank">前台</a></li>
         </ul>
         <!-- /主导航 -->
@@ -62,41 +66,78 @@
                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul><?php endif; ?>
         <!-- /子导航 --><?php endforeach; endif; else: echo "" ;endif; ?>
- 
+    <h3>
+    <i class="icon icon-fold"></i>
+    <a class="item" href="/admin.php?s=/Goods/index/cate_id/151.html">积分礼品</a>
+    </h3>
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="/admin.php?s=/Goods/index/cate_id/152.html">礼品活动</a>
+    </h3>
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="/admin.php?s=/Goods/index/cate_id/153.html">积分换券</a>
+    </h3>
 
-    <?php if(is_array($nodes)): $i = 0; $__LIST__ = $nodes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub_menu): $mod = ($i % 2 );++$i;?><!-- 子导航 -->
-        <?php if(!empty($sub_menu)): ?><h3>
-            	<i class="icon <?php if(($sub_menu['current']) != "1"): ?>icon-fold<?php endif; ?>"></i>
-            	<?php if(($sub_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($sub_menu["url"])); ?>"><?php echo ($sub_menu["title"]); ?></a><?php else: echo ($sub_menu["title"]); endif; ?>
-            </h3>
-            <ul class="side-sub-menu <?php if(($sub_menu["current"]) != "1"): ?>subnav-off<?php endif; ?>">
-                <?php if(is_array($sub_menu['_child'])): $i = 0; $__LIST__ = $sub_menu['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><li <?php if($menu['id'] == $cate_id or $menu['current'] == 1): ?>class="current"<?php endif; ?>>
-                        <?php if(($menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($menu["title"]); ?></a><?php endif; ?>
 
-                        <!-- 一级子菜单 -->
-                        <?php if(isset($menu['_child'])): ?><ul class="subitem">
-                        	<?php if(is_array($menu['_child'])): foreach($menu['_child'] as $key=>$three_menu): ?><li>
-                                <?php if(($three_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($three_menu["url"])); ?>"><?php echo ($three_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($three_menu["title"]); ?></a><?php endif; ?>
-                                <!-- 二级子菜单 -->
-                                <?php if(isset($three_menu['_child'])): ?><ul class="subitem">
-                                	<?php if(is_array($three_menu['_child'])): foreach($three_menu['_child'] as $key=>$four_menu): ?><li>
-                                        <?php if(($four_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo U('index','cate_id='.$four_menu['id']);?>"><?php echo ($four_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($four_menu["title"]); ?></a><?php endif; ?>
-                                        <!-- 三级子菜单 -->
-                                        <?php if(isset($four_menu['_child'])): ?><ul class="subitem">
-                                        	<?php if(is_array($four_menu['_child'])): $i = 0; $__LIST__ = $four_menu['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$five_menu): $mod = ($i % 2 );++$i;?><li>
-                                            	<?php if(($five_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo U('index','cate_id='.$five_menu['id']);?>"><?php echo ($five_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($five_menu["title"]); ?></a><?php endif; ?>
-                                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
-                                        </ul><?php endif; ?>
-                                        <!-- end 三级子菜单 -->
-                                    </li><?php endforeach; endif; ?>
-                                </ul><?php endif; ?>
-                                <!-- end 二级子菜单 -->
-                            </li><?php endforeach; endif; ?>
-                        </ul><?php endif; ?>
-                        <!-- end 一级子菜单 -->
-                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
-            </ul><?php endif; ?>
-        <!-- /子导航 --><?php endforeach; endif; else: echo "" ;endif; ?>
+    <!--<h3>-->
+        <!--<i class="icon <?php if(($sub_menu['current']) != "1"): ?>icon-fold<?php endif; ?>"></i>-->
+        <!--<?php if(($sub_menu['allow_publish']) > "0"): ?>-->
+            <!--<a class="item" href="<?php echo (U($sub_menu["url"])); ?>"><?php echo ($sub_menu["title"]); ?></a><?php else: echo ($sub_menu["title"]); ?>-->
+        <!--<?php endif; ?>-->
+    <!--</h3>-->
+
+    <!--<?php if(is_array($nodes)): $i = 0; $__LIST__ = $nodes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub_menu): $mod = ($i % 2 );++$i;?>-->
+        <!--&lt;!&ndash; 子导航 &ndash;&gt;-->
+        <!--<?php if(!empty($sub_menu)): ?>-->
+            <!--<h3>-->
+            	<!--<i class="icon <?php if(($sub_menu['current']) != "1"): ?>icon-fold<?php endif; ?>"></i>-->
+            	<!--<?php if(($sub_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($sub_menu["url"])); ?>"><?php echo ($sub_menu["title"]); ?></a><?php else: echo ($sub_menu["title"]); endif; ?>-->
+            <!--</h3>-->
+            <!--<ul style="display:none" class="side-sub-menu <?php if(($sub_menu["current"]) != "1"): ?>subnav-off<?php endif; ?>" >-->
+                <!--<?php if(is_array($sub_menu['_child'])): $i = 0; $__LIST__ = $sub_menu['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?>-->
+                    <!--<li <?php if($menu['id'] == $cate_id or $menu['current'] == 1): ?>class="current"<?php endif; ?>>-->
+                        <!--<?php if(($menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($menu["title"]); ?></a><?php endif; ?>-->
+
+                        <!--&lt;!&ndash; 一级子菜单 &ndash;&gt;-->
+                        <!--<?php if(isset($menu['_child'])): ?>-->
+                        <!--<ul class="subitem">-->
+                        	<!--<?php if(is_array($menu['_child'])): foreach($menu['_child'] as $key=>$three_menu): ?>-->
+                            <!--<li>-->
+                                <!--<?php if(($three_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($three_menu["url"])); ?>"><?php echo ($three_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($three_menu["title"]); ?></a><?php endif; ?>-->
+                                <!--&lt;!&ndash; 二级子菜单 &ndash;&gt;-->
+                                <!--<?php if(isset($three_menu['_child'])): ?>-->
+                                <!--<ul class="subitem">-->
+                                	<!--<?php if(is_array($three_menu['_child'])): foreach($three_menu['_child'] as $key=>$four_menu): ?>-->
+                                    <!--<li>-->
+                                        <!--<?php if(($four_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo U('index','cate_id='.$four_menu['id']);?>"><?php echo ($four_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($four_menu["title"]); ?></a><?php endif; ?>-->
+                                        <!--&lt;!&ndash; 三级子菜单 &ndash;&gt;-->
+                                        <!--<?php if(isset($four_menu['_child'])): ?>-->
+                                        <!--<ul class="subitem">-->
+                                        	<!--<?php if(is_array($four_menu['_child'])): $i = 0; $__LIST__ = $four_menu['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$five_menu): $mod = ($i % 2 );++$i;?>-->
+                                            <!--<li>-->
+                                            	<!--<?php if(($five_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo U('index','cate_id='.$five_menu['id']);?>"><?php echo ($five_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($five_menu["title"]); ?></a><?php endif; ?>-->
+                                            <!--</li>-->
+                                            <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                        <!--</ul>-->
+                                        <!--<?php endif; ?>-->
+                                        <!--&lt;!&ndash; end 三级子菜单 &ndash;&gt;-->
+                                    <!--</li>-->
+                                     <!--<?php endforeach; endif; ?>-->
+                                <!--</ul>-->
+                                <!--<?php endif; ?>-->
+                                <!--&lt;!&ndash; end 二级子菜单 &ndash;&gt;-->
+                            <!--</li>-->
+                            <!--<?php endforeach; endif; ?>-->
+                        <!--</ul>-->
+                        <!--<?php endif; ?>-->
+                        <!--&lt;!&ndash; end 一级子菜单 &ndash;&gt;-->
+                    <!--</li>-->
+                <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+            <!--</ul>-->
+        <!--<?php endif; ?>-->
+        <!--&lt;!&ndash; /子导航 &ndash;&gt;-->
+    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
     
 </div>
 <script>
@@ -255,7 +296,7 @@
     (function(){
         var ThinkPHP = window.Think = {
             "ROOT"   : "", //当前网站地址
-            "APP"    : "/index.php?s=", //当前项目地址
+            "APP"    : "/admin.php?s=", //当前项目地址
             "PUBLIC" : "/Public", //项目公共目录地址
             "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
             "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
