@@ -1,0 +1,1866 @@
+[ 2015-08-21T15:08:48+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-08-21T15:08:50+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0024s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:08:57+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:08:58+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:10:27+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:10:34+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:10:38+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:10:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:11:52+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:11:53+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:12:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:17:58+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003609s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:18:00+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:18:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:18:12+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0047s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:18:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0038s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:18:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:18:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0038s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:18:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:18:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0025s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 38 行.
+
+[ 2015-08-21T15:18:21+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001703s ]
+
+[ 2015-08-21T15:19:36+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2015-08-21T15:19:39+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:39+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:42+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:42+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:19:47+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:21:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0044s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0035s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141679','admin在2015-08-21 15:21登录了后台') [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055279 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:21:34+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141694','admin在2015-08-21 15:21登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055294 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:21:46+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0051s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141706','admin在2015-08-21 15:21登录了后台') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055306 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:23:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0041s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141800','admin在2015-08-21 15:23登录了后台') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055400 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:23:39+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2015-08-21T15:23:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141820','admin在2015-08-21 15:23登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055420 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:24:08+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000280s ]
+
+[ 2015-08-21T15:24:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141849','admin在2015-08-21 15:24登录了后台') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055449 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:24:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0035s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0022s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141855','admin在2015-08-21 15:24登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055455 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:25:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0036s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Model/MemberModel.class.php 第 39 行.
+
+[ 2015-08-21T15:25:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:25:37+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-08-21T15:25:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0023s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141940','admin在2015-08-21 15:25登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055540 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:26:12+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0019s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440141972','admin在2015-08-21 15:26登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055572 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:26:33+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003306s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-21T15:26:47+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-21T15:27:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003162s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142075','admin在2015-08-21 15:27登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055675 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: set /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+NOTIC: [2] implode(): Invalid arguments passed /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db/Driver.class.php 第 371 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+
+[ 2015-08-21T15:28:53+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002971s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0023s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142133','admin在2015-08-21 15:28登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055733 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-21T15:29:00+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0026s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142140','admin在2015-08-21 15:29登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055740 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-21T15:29:02+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142142','admin在2015-08-21 15:29登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055742 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-21T15:29:08+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0022s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142148','admin在2015-08-21 15:29登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055748 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-21T15:30:06+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0022s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142206','admin在2015-08-21 15:30登录了后台') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055806 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-21T15:30:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0021s ]
+SQL: UPDATE `tpshop_config` SET `value`='http://www.ts.com' WHERE ( name='DOMAIN' ) [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0038s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.028843s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.029246s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.785374s ]
+SQL: select version() as v; [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004688s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.753329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.756988s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:1.756995s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.791101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002458s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.759731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.761137s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.004135s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.790423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002552s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.759731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.761226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2015-08-21T15:30:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2015-08-21T15:30:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142223','admin在2015-08-21 15:30登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055823 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-21T15:30:25+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0027s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142225','admin在2015-08-21 15:30登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055825 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-21T15:30:45+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/tpshop/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tpshop_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_action` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0022s ]
+SQL: INSERT INTO `tpshop_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1440142245','admin在2015-08-21 15:30登录了后台') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tpshop_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 1080 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1440055845 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-21T15:30:46+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0028s ]
+SQL: UPDATE `tpshop_config` SET `value`='http://www.ts.com' WHERE ( name='DOMAIN' ) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0041s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.023897s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.198582s ]
+SQL: select version() as v; [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002165s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.171638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.173744s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:1.173759s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:-1.200930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001095s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.174558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.175571s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.001815s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:1.199540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001190s ]
+INFO: [ view_parse ] --END-- [ RunTime:-1.174558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-1.175660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2015-08-21T15:30:48+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tpshop_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `tpshop_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`url` FROM `tpshop_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '支付管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '信息管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` WHERE `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2015-08-21T15:30:50+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `tpshop_config` [ RunTime:0.0029s ]
+SQL: UPDATE `tpshop_config` SET `value`='http://www.ts.com' WHERE ( name='DOMAIN' ) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0039s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_action_log` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.024774s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant HTTP_CLIENT_IP - assumed 'HTTP_CLIENT_IP' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 842 行.
+NOTIC: [8] Use of undefined constant HTTP_X_FORWARDED_FOR - assumed 'HTTP_X_FORWARDED_FOR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 844 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant unknown - assumed 'unknown' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 846 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 847 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.919747s ]
+SQL: select version() as v; [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002714s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.892771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.895483s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.895542s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.923149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001354s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.896550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.897831s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.002288s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.922656s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001458s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.896550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.897919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-08-21T15:30:52+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%Goods/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0080s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` = 1  [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Controller/GoodsController.class.php 第 233 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2015-08-21T15:30:57+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0052s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0018s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-08-21T15:31:59+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/153.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0026s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0038s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '153' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2015-08-21T15:32:36+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` WHERE `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-08-21T15:32:38+08:00 ] 127.0.0.1 /admin.php?s=/User/index.html
+SQL: SHOW COLUMNS FROM `tpshop_member` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_member` WHERE `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`password`,`email`,`phone`,`gddh`,`address`,`jifen`,`truename` FROM `tpshop_member` WHERE `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+NOTIC: [8] Undefined index: score /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 137 行.
+NOTIC: [8] Undefined index: login /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: last_login_time /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 139 行.
+NOTIC: [8] Undefined index: last_login_ip /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 140 行.
+NOTIC: [8] Undefined index: status_text /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 141 行.
+NOTIC: [8] Undefined index: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2015-08-21T15:32:40+08:00 ] 127.0.0.1 /admin.php?s=/Order/index.html
+SQL: SHOW COLUMNS FROM `tpshop_menu` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`title`,`url` FROM `tpshop_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `tpshop_menu` WHERE ( pid !=0 AND url like '%Order/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_menu` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `tpshop_menu` WHERE `group` <> '' AND `pid` = 131  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `tpshop_menu` WHERE `pid` = 131 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '订单管理' AND `pid` = 131 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '换货管理' AND `pid` = 131 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `tpshop_menu` WHERE `group` = '取消管理' AND `pid` = 131 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`orderid`,`tag`,`pricetotal`,`create_time`,`status`,`assistant`,`update_time`,`uid`,`shipprice`,`display`,`isover`,`ispay`,`total`,`tool`,`addressid`,`toolid`,`isdefault`,`info`,`shipway`,`invoice`,`message`,`backinfo`,`score`,`codeid`,`codemoney`,`send_name`,`send_contact`,`send_address` FROM `tpshop_order` WHERE `status` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: group /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/18bc66a7b6334412ab8e61a2539ecfbd.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2015-08-21T15:32:44+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Controller/GoodsController.class.php 第 233 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 84 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 85 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-08-21T15:33:29+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0029s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Controller/GoodsController.class.php 第 233 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001854s ]
+
+[ 2015-08-21T15:35:46+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0043s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM tpshop_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Admin/Controller/GoodsController.class.php 第 237 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005614s ]
+
+[ 2015-08-21T15:35:47+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+ERR: 模板不存在:./Application/Admin/View/Goods/addQuan.html
+
+[ 2015-08-21T15:37:12+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: allow /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 192 行.
+NOTIC: [8] Undefined variable: model /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 200 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 208 行.
+NOTIC: [8] Undefined variable: pid /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 209 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 211 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 212 行.
+NOTIC: [8] Undefined variable: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 219 行.
+NOTIC: [8] Undefined variable: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 219 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 229 行.
+NOTIC: [8] Undefined variable: list_grids /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 257 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 263 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 272 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-08-21T15:37:17+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: allow /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 192 行.
+NOTIC: [8] Undefined variable: model /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 200 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 208 行.
+NOTIC: [8] Undefined variable: pid /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 209 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 211 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 212 行.
+NOTIC: [8] Undefined variable: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 219 行.
+NOTIC: [8] Undefined variable: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 219 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 229 行.
+NOTIC: [8] Undefined variable: list_grids /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 257 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 263 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 272 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-08-21T15:38:31+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 202 行.
+NOTIC: [8] Undefined variable: status /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 202 行.
+NOTIC: [8] Undefined variable: cate_id /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 212 行.
+NOTIC: [8] Undefined variable: list_grids /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 240 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 246 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2015-08-21T15:38:56+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: list_grids /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 208 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 214 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2015-08-21T15:39:17+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: list_grids /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 206 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 212 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 221 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-08-21T15:39:29+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: list_grids /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 208 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 214 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2015-08-21T15:40:47+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 218 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2015-08-21T15:41:01+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 218 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-08-21T15:42:13+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+ERR: 模板不存在:./Application/Admin/View/Goods/addQuan.html
+
+[ 2015-08-21T15:42:25+08:00 ] 127.0.0.1 /admin.php?s=/Goods/listQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 94 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 218 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001970s ]
+
+[ 2015-08-21T15:43:01+08:00 ] 127.0.0.1 /admin.php?s=/Goods/listQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 94 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 219 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2015-08-21T15:43:21+08:00 ] 127.0.0.1 /admin.php?s=/Goods/listQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 94 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 219 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-08-21T15:43:53+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+ERR: 模板不存在:./Application/Admin/View/Goods/addQuan.html
+
+[ 2015-08-21T15:44:44+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 219 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2015-08-21T15:45:27+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/152.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '152' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/7460c3bd08e8aaf3e719467d6ea19bd3.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-08-21T15:45:29+08:00 ] 127.0.0.1 /admin.php?s=/goods/add/cate_id/152/pid/0/model_id/5.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0046s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0010s ]
+SQL: SELECT `field_sort` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `type` FROM `tpshop_category` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 90 行.
+INFO: [ adminArticleEdit ] --START--
+SQL: SHOW COLUMNS FROM `tpshop_addons` [ RunTime:0.0024s ]
+SQL: SELECT `config` FROM `tpshop_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Addons\EditorForAdmin\EditorForAdminAddon [ RunTime:0.008340s ]
+INFO: [ adminArticleEdit ] --END-- [ RunTime:0.008359s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 214 行.
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2015-08-21T15:46:33+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2015-08-21T15:47:17+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2015-08-21T15:47:33+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-08-21T15:47:34+08:00 ] 127.0.0.1 /admin.php?s=/Goods/listQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 94 行.
+NOTIC: [8] Undefined variable: list /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 219 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/ce040641ad5d5eabba0492c9e5ab9bee.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-08-21T15:47:35+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2015-08-21T15:48:03+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-08-21T15:48:21+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+NOTIC: [8] Undefined variable: _page /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2015-08-21T15:51:32+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2015-08-21T15:52:30+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2015-08-21T15:52:58+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2015-08-21T15:53:06+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-08-21T15:54:07+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-08-21T15:54:15+08:00 ] 127.0.0.1 /admin.php?s=/Goods/addQuan.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 5 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 88 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 89 行.
+NOTIC: [8] Undefined variable: sub_menu /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 90 行.
+NOTIC: [8] Undefined variable: nodes /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 94 行.
+NOTIC: [8] Use of undefined constant listQuan - assumed 'listQuan' /Applications/XAMPP/xamppfiles/htdocs/tpshop/Runtime/Cache/Admin/88b51cba9028ddd42c43249f363505d6.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+

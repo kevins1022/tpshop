@@ -1,0 +1,31 @@
+<extend name="Base/common"/>
+<block name="body">
+    <div class="head">
+        <include file="Public/jf_nav"/>
+
+    </div>
+    <div class="main">
+        <div class="position">
+            您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="forget1.html">找回密码</a>
+        </div><!--position end-->
+        <div class="forget">
+            <div class="tit">找回密码</div>
+            <div class="pic" align="center"><img src="__PUBLIC__/Jf/images/forget_04.png"></div>
+            <div align="center" style="font-size:14px; line-height:35px;">恭喜您，修改登录密码成功！</div>
+            <table align="center">
+                <tbody><tr height="55">
+                    <td><a href="__APP__"><div class="btn">去逛逛</div></a></td>
+                </tr>
+                </tbody></table>
+            <script>
+                $("input").focus(function(){
+                    $(this).css('border-color','#ff0000');
+                });
+                $("input").blur(function(){
+                    $(this).css('border-color','#b3b3b3');
+                });
+            </script>
+        </div><!--forget end-->
+    </div>
+    <!--main end-->
+</block>

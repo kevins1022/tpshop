@@ -31,6 +31,16 @@ class GoodsController extends AdminController {
      *
      * @author 朱亚杰  <xcoolcc@gmail.com>
      */
+    public function listQuan(){
+        //echo 1;
+        $this->display();
+    }
+    public function addQuan(){
+
+        $this->display();
+
+
+    }
     protected function checkDynamic(){
         $cates = AuthGroupModel::getAuthCategories(UID);
         switch(strtolower(ACTION_NAME)){

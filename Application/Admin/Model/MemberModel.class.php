@@ -34,7 +34,10 @@ class MemberModel extends Model {
      */
     public function login($uid){
         /* 检测是否在当前应用注册 */
-        $user = $this->field(true)->find($uid);
+        $user = $this->find($uid);
+        //var_dump($user);
+
+        $user['status'] =1;
         if(!$user || 1 != $user['status']) {
             $this->error = '用户不存在或已被禁用！'; //应用级别禁用
             return false;
@@ -63,19 +66,19 @@ class MemberModel extends Model {
      */
     private function autoLogin($user){
         /* 更新登录信息 */
-        $data = array(
-            'uid'             => $user['uid'],
-            'login'           => array('exp', '`login`+1'),
-            'last_login_time' => NOW_TIME,
-            'last_login_ip'   => get_client_ip(1),
-        );
-        $this->save($data);
+//        $data = array(
+//            'uid'             => $user['uid'],
+//            //'login'           => array('exp', '`login`+1'),
+//            //'last_login_time' => NOW_TIME,
+//            //'last_login_ip'   => get_client_ip(1),
+//        );
+//        $this->save($data);
 
         /* 记录登录SESSION和COOKIES */
         $auth = array(
             'uid'             => $user['uid'],
             'username'        => $user['nickname'],
-            'last_login_time' => $user['last_login_time'],
+            'last_login_time' => time(),
         );
 
         session('user_auth', $auth);

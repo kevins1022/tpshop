@@ -58,60 +58,27 @@
 
     </div>
     <div class="main">
-        <div style="height:38px;"></div>
-        <div class="login_pic"><img src="/Public/Jf/images/img_login.jpg"/></div>
-        <div class="login">
-            <div class="tit">
-                <span style="border:0">欢迎回来！请登录</span>
-            </div>
-            <!--tit end-->
-            <form action="/index.php?s=/Home/User/login.html" method="post" id="log_form">
-                <table border="0" style="margin-top:18px;">
-                    <tr height="60" valign="top">
-                        <td colspan="2">
-                            <input type="text" class="textbox1" placeholder="登录名" name="nickname"/>
-
-                            <p>请输入登录名</p>
-                        </td>
-                    </tr>
-                    <tr height="60" valign="top">
-                        <td colspan="2">
-                            <input type="password" class="textbox1" placeholder="密码" name="password"/>
-
-                            <p>请输入密码</p>
-                        </td>
-                    </tr>
-                    <tr height="40">
-                        <td colspan="2">
-                            <a href="javascript:;">
-                            <div class="btn" id="log_sub">登录</div>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr height="40">
-                        <td class="sure" width="130"><input type="checkbox" class="checkbox"/>记住用户名</td>
-                        <td><a href="<?php echo U('User/forget1');?>" style="color:#808080">忘记密码？</a>&nbsp;|&nbsp;<a href="<?php echo U('User/register');?>"
-                                                                                                  style="color:#ff0000">免费注册</a>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <div class="position">
+            您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="forget1.html">找回密码</a>
+        </div><!--position end-->
+        <div class="forget">
+            <div class="tit">找回密码</div>
+            <div class="pic" align="center"><img src="/Public/Jf/images/forget_04.png"></div>
+            <div align="center" style="font-size:14px; line-height:35px;">恭喜您，修改登录密码成功！</div>
+            <table align="center">
+                <tbody><tr height="55">
+                    <td><a href="/index.php?s="><div class="btn">去逛逛</div></a></td>
+                </tr>
+                </tbody></table>
             <script>
-                $("input").focus(function () {
-                    $(this).css('border-color', '#ff0000');
-                    $(this).parent().find("p").css('display', 'block');
+                $("input").focus(function(){
+                    $(this).css('border-color','#ff0000');
                 });
-                $("input").blur(function () {
-                    $(this).css('border-color', '#b3b3b3');
-                    $(this).parent().find("p").css('display', 'none');
-                });
-                $("#log_sub").click(function(){
-                    $("#log_form").submit();
+                $("input").blur(function(){
+                    $(this).css('border-color','#b3b3b3');
                 });
             </script>
-        </div>
-        <!--login end-->
-        <div class="clear" style="height:90px;"></div>
+        </div><!--forget end-->
     </div>
     <!--main end-->
 

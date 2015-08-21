@@ -78,6 +78,10 @@
         <i class="icon icon-fold"></i>
         <a class="item" href="/admin.php?s=/Goods/index/cate_id/153.html">积分换券</a>
     </h3>
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="/admin.php?s=/Goods/addQuan">生成积分券</a>
+    </h3>
 
 
     <!--<h3>-->
@@ -141,13 +145,13 @@
     
 </div>
 <script>
-    $(function(){
-        $(".side-sub-menu li").hover(function(){
-            $(this).addClass("hover");
-        },function(){
-            $(this).removeClass("hover");
-        });
-    })
+//    $(function(){
+//        $(".side-sub-menu li").hover(function(){
+//            $(this).addClass("hover");
+//        },function(){
+//            $(this).removeClass("hover");
+//        });
+//    })
 </script>
 
 

@@ -32,7 +32,14 @@
         
     <div class="top1">
         <div class="box">
+            <?php if(empty(session('userId'))): ?>
             <a href="<?php echo U('User/login');?>">登录</a>&nbsp;&nbsp;&nbsp;<a href="<?php echo U('User/register');?>">免费注册</a>&nbsp;&nbsp;<a href="/index.php?s=">宝岛官网</a>
+            <?php endif; ?>
+
+            <?php if(!empty(session('userId'))): ?>
+            <a href="<?php echo U('User/index');?>"><?php echo session('nickname'); ?></a>&nbsp;&nbsp;&nbsp;<a href="<?php echo U('User/logout');?>">退出</a>&nbsp;&nbsp;<a href="/index.php?s=">宝岛官网</a>
+            <?php endif; ?>
+
         </div>
     </div><!--top1 end-->
     <div class="top2">
@@ -55,7 +62,7 @@
         <div class="login_pic"><img src="/Public/Jf/images/img_login.jpg" /></div>
         <div class="login">
             <div class="tit">
-                <span>请注册</span>已注册？&nbsp;<a href="">登录</a>
+                <span>请注册</span>已注册？&nbsp;<a href="{User/login}">登录</a>
             </div><!--tit end-->
             <form action="/index.php?s=/Home/User/register.html" method="post" id="reg_form" >
             <table border="0">

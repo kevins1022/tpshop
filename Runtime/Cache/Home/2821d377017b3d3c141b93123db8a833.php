@@ -66,10 +66,10 @@
             <div class="personal_left">
                 <div class="title">个人中心</div>
                 <ul>
-    <li><a href="personal_01.html">我的资料</a></li>
-    <li><a href="personal_02.html">收货地址</a></li>
-    <li><a href="personal_03.html">积分管理</a></li>
-    <li><a href="personal_04.html">我的订单</a></li>
+    <li><a href="<?php echo U('User/index');?>">我的资料</a></li>
+    <li><a href="<?php echo U('User/shopAddress');?>">收货地址</a></li>
+    <li><a href="<?php echo U('User/jfManage');?>">积分管理</a></li>
+    <li><a href="<?php echo U('User/ordList');?>">我的订单</a></li>
 </ul>
             </div><!--personal_left end-->
             <div class="personal_right">

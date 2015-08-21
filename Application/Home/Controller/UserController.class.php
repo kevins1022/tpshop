@@ -220,6 +220,35 @@ class UserController extends HomeController
         $verify->entry(1);
     }
 
+    /**
+     * 忘记密码第一步
+     */
+    public function forget1(){
+
+        $this->display();
+    }
+
+    /**
+     * 忘记密码第二步
+     */
+    public function forget2(){
+        $this->display();
+    }
+
+    /**
+     * 忘记密码第三步
+     */
+    public function forget3(){
+        $this->display();
+    }
+
+    /**
+     * 忘记密码第四步
+     */
+    public function forget4(){
+        $this->display();
+    }
+
 
 
     public function cart()

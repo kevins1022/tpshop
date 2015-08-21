@@ -1,0 +1,39 @@
+<extend name="Base/common"/>
+<block name="body">
+    <div class="head">
+        <include file="Public/jf_nav"/>
+
+    </div>
+    <div class="main">
+        <div class="position">
+            您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="forget1.html">找回密码</a>
+        </div><!--position end-->
+        <div class="forget">
+            <div class="tit">找回密码</div>
+            <div class="pic" align="center"><img src="__PUBLIC__/Jf/images/forget_03.png"></div>
+            <table align="center">
+                <tbody><tr height="45">
+                    <td align="right">新密码：</td>
+                    <td colspan="3"><input type="password" class="textbox1" placeholder="新密码"></td>
+                </tr>
+                <tr height="45">
+                    <td align="right">确认密码：</td>
+                    <td colspan="3"><input type="password" class="textbox1" placeholder="确认密码"></td>
+                </tr>
+                <tr height="55">
+                    <td align="right">&nbsp;</td>
+                    <td colspan="3"><a href="forget4.html"><div class="btn">确定</div></a></td>
+                </tr>
+                </tbody></table>
+            <script>
+                $("input").focus(function(){
+                    $(this).css('border-color','#ff0000');
+                });
+                $("input").blur(function(){
+                    $(this).css('border-color','#b3b3b3');
+                });
+            </script>
+        </div><!--forget end-->
+    </div>
+    <!--main end-->
+</block>
