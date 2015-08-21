@@ -1,66 +1,74 @@
-<extend name="Base/s1"/>
+<extend name="Base/common"/>
 
 
 
 <block name="body">
-     
-        <!-- Contents  -->
-      
-	  <div class="ml_content">
-<div class="goodlist-main">
-	  <div class="lists-position">
-	  <div class="category-title">
-	  <h4><span>{$category.title}({$num})</span></h4>
-	  <div class="category-child">
-	  <empty name="childlist"> 
-	 <else/>
-	  <volist name="childlist" id="vo"><span> <a href="{:U('Article/lists/?category='.$vo['name'])}">{$vo.title}</a></span></volist>
-	  </empty>
-</div>
-</div>
 
- <div class="salesrank">
-  <h5><span>销量排行</span></h5>
-  <ul><volist name="sales" id="vo"><li><a class="picture" href="{:U('Article/detail?id='.$vo['id'])}"><img src="{$vo.id|get_cover_id|get_cover='path'}"  ></a>
-  <a class="title" href="{:U('Article/detail?id='.$vo['id'])}"> {$vo.id|get_good_name}</a>
-  <span>￥{$vo.id|get_good_price} </span>
-  </li></volist></ul>
-  
-  </div>
-  <div class="salesrank">
-  <h5><span>最近浏览</span></h5>
- <ul><volist name="recent" id="vo"><li><a class="picture" href="{:U('Article/detail?id='.$vo['page'])}"><img src="{$vo.page|get_cover_id|get_cover='path'}"  ></a>
-  <a class="title" href="{:U('Article/detail?id='.$vo['page'])}"> {$vo.page|get_good_name}</a>
-  <span>￥{$vo.page|get_good_price} </span>
-  </li></volist></ul>
- </div>
-	  </div>
-	   <div class="lists-area">
-	 
-       <ul class="ml_content_top"><li <eq name="order" value="1">class="active"<else/></eq>><a rel="nofollow" url="{:U('article/index','order=1'.'&sort='.$see)}" href="{:U('Article/index','category='.$category['name'].'&order=1'.'&sort='.$see)}" class="{$value}">热度<i></i></a></li><li <eq name="order" value="2">class="active"<else/></eq>><a rel="nofollow" href="{:U('Article/index','category='.$category['name'].'&order=2'.'&sort='.$see)}"  class="{$value}">最新<i></i></a></li><li <eq name="order" value="3">class="active"<else/></eq>><a rel="nofollow" href="{:U('Article/index','category='.$category['name'].'&order=3'.'&sort='.$see)}"  class="{$value}">价格<i></i></a></li><li <eq name="order" value="4">class="active"<else/></eq>><a rel="nofollow" href="{:U('Article/index','category='.$category['name'].'&order=4'.'&sort='.$see)}"  class="{$value}">销量<i></i></a></li></ul> 
-	  
-	  <ul class="goodlist">
-      
-         <volist name="list" id="list"  empty="暂时没有数据" >
-          <li class="face" onmouseover="this.className='facehover'" onmouseout="this.className='face'">
-                    <a href="{:U('Article/detail?id='.$list['id'])}" class="list-img"> <img src="{$list.cover_id|get_cover='path'}"/></a>
-             <p> <a href="{:U('Article/detail?id='.$list['id'])}" class="t2"> {$list.title}</a></p>     
-                       <p><span class="red" title="预览：{$list.id|get_good_price}">价格：￥{$list.price}</span></p> 
+    <div class="head">
+        <include file="Public/jf_nav"/>
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background:url(__PUBLIC__/Jf/images/banner_01.jpg) 50% 0 no-repeat;"></li>
+                <li style="background:url(__PUBLIC__/Jf/images/banner_01.jpg) 50% 0 no-repeat;"></li>
+            </ul>
+        </div><!--flexslider end-->
+    </div>
+    <div class="main">
+        <a href="" class="btn_me"><img src="__PUBLIC__/Jf/images/btn_me.png"></a>
+        <div class="position">
+            您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="gift.html">积分礼品</a>
+        </div><!--position end-->
+        <div class="search2">
+            <span>礼品积分分段：</span>&nbsp;&nbsp;
+            <a href="">全部</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">0-4000</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">4000-8000</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">8000以上</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            积分：<input type="text">&nbsp;至&nbsp;<input type="text">
+            <a href="" class="btn">查询</a>
+        </div><!--search2 end-->
+        <div class="sort">
+            <span>排序：</span>
+            <a href=""><div class="btn">默认</div></a>
+            <a href=""><div class="btn">最新</div></a>
+            <a href=""><div class="btn">最热</div></a>
+            <a href=""><div class="btn" style="width:90px; background:url(__PUBLIC__/Jf/images/arrow.jpg) no-repeat center right;">积分</div></a>
+            <div class="clear"></div>
+        </div><!--sort end-->
+        <div class="line"></div>
+        <div class="index_list">
+            <ul>
 
-              </li>      
-            </volist>
-			</ul>
-		  	<!-- 分页 -->
-        <div class="page">
-{$page}
-        </div>	
-			
-			</div>
-	  </div>
-	  
-	 </div>
 
-         
-        </section>
- 	
+
+                <volist name="list" id="list"  empty="暂时没有数据" >
+                <li>
+                    <div class="pic" style="background:url({$list.cover_id|get_cover='path'}) no-repeat;"></div><!--pic end-->
+                    <div class="tit">{$list.title}</div>
+                    <a href="{:U('Article/detail?id='.$list['id'])}"><div class="btn">立即购买</div></a>
+                    <div class="points"><span>{$list.jifen}</span>积分&nbsp;或&nbsp;<span>{$list.price}</span>RMB</div>
+                </li>
+                </volist>
+
+            </ul>
+            <div class="clear"></div>
+        </div><!--index_list end-->
+        <div id="pager">
+            <ul class="pages">
+
+                {$page}
+
+        </div>
+        <div class="clear"></div>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function() {
+                $("#pager").pager({ pagenumber: 1, pagecount: 15, buttonClickCallback: PageClick });
+            });
+            PageClick = function(pageclickednumber) {
+                $("#pager").pager({ pagenumber: pageclickednumber, pagecount: 15, buttonClickCallback: PageClick });
+                $(".index_list").html();
+            }
+        </script>
+    </div>
+
 </block>

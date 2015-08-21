@@ -53,6 +53,7 @@ class ArticleController extends HomeController {
 		$Page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
 		$show= $Page->show();
 		$list= M('Document')->where($map)->order( $listsort)->limit($Page->firstRow.','.$Page->listRows)->select();
+
 		$this->assign('list',$list);// 赋值数据集
 		$this->assign('page',$show);//
 		//获取分类的id
@@ -95,6 +96,7 @@ class ArticleController extends HomeController {
 		$this->assign('recent', $recent);
 		/* 模板赋值并渲染模板 */
 		$this->assign('category', $category);
+     //var_dump($list);
 
 		$this->display($category['template_index']);
 		}

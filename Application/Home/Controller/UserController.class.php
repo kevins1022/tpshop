@@ -14,10 +14,109 @@ class UserController extends HomeController
     /* 用户中心首页 */
     public function index()
     {
-       if(empty(session('nickname'))){
+       if(empty(session('nickname')) || empty(session('userId'))){
            $this->error("非法请求");
        }
-        echo 1;
+        if(IS_POST){
+            extract($_POST);
+            //var_dump($_POST);
+           // echo "<br>";
+            $data = array(
+                'uid' => session('userId'),
+                'truename' =>$truename,
+                'sex' => $sex,
+                'birthday' => $birthday['year'].'-'.$birthday['mon'].'-'.$birthday['day'],
+                'email' => $email,
+                'phone' => $phone,
+                'gddh' => $gddh,
+                'address' => $address
+
+
+            );
+            //var_dump($data);
+           //die();
+            $row = M('member')->save($data);
+            if($row){
+                $this->success('更新成功', U('User/index'));
+
+            }else{
+                $this->error("更新失败", U('User/index'));
+            }
+        }
+        $uid = session('userId');
+        $data = M('member')->find($uid);
+        $this->data = $data;
+        $this->display();
+
+    }
+
+    /**
+     * 收获地址
+     */
+    public function shopAddress(){
+        $id = session('userId');
+        if(IS_POST){
+            extract($_POST);
+
+            $data = array(
+                //'uid' => $id,
+                'phone' =>$phone,
+                'address' =>$address,
+                'truename' => $truename
+            );
+
+            if(M('userShopAdd')->where("uid=$id")->find()){
+                $row = M('userShopAdd')->where("uid=$id")->save($data);
+
+                if($row){
+                    $this->success("更新成功",U('user/shopAddress'));
+                    die();
+
+                }else{
+                    $this->error("更新失败");
+                }
+
+            }else{
+                $data['uid'] = $id;
+                $row = M('userShopAdd')->add($data);
+                if($row){
+                    $this->success("添加成功",U('user/shopAddress'));
+                    die();
+
+
+                }else{
+                    $this->error("添加失败");
+                }
+
+            }
+
+
+        }
+        $data = M('userShopAdd')->where("uid=$id")->find();
+        $this->data = $data;
+        $this->display();
+    }
+
+    /**
+     * 积分管理
+     */
+    public function jfManage(){
+        $id = session('userId');
+        $row = M('Member')->find($id);
+        if($row){
+            $this->data = $row;
+        }else{
+             $this->error("非法请求");
+        }
+        $this->display();
+
+    }
+
+    /**
+     * 订单中心
+     */
+    public function ordList(){
+        $this->display();
 
     }
 
@@ -45,7 +144,10 @@ class UserController extends HomeController
             $data['password'] = md5($password);
             $data['sex'] =$sex;
             $res = M('member')->add($data);
+            //var_dump($res);
             if ($res) {
+                session('nickname',$data['username']);
+                session('userId',$res['uid']);
                 $this->success("注册成功！", U('User/index'));
             } else {
                 $this->error("注册失败，请重新注册！");
@@ -71,6 +173,9 @@ class UserController extends HomeController
             $res = $memberModel->where($data)->find();
             if($res){
                 session('nickname', $data['nickname']);
+                //var_dump($res);
+                session('userId', $res['uid']);
+
                 $this->success("登录成功", U('User/index'));
             }else{
                 $this->error("用户名或密码错误");
@@ -90,7 +195,8 @@ class UserController extends HomeController
     {
         if (!empty(session('nickname'))) {
             session('nickname',null);
-            $this->success("退出成功！");
+            session('userId',null);
+            $this->success("退出成功！", U('User/login'));
         } else {
             $this->redirect("User/login");
         }

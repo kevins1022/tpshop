@@ -4,6 +4,8 @@
 <head>
 <link href="/Public/Jf/css/style.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Jf/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Jf/css/pager.css" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript" src="/Public/Jf/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Jf/js/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
@@ -30,17 +32,24 @@
         
     <div class="top1">
         <div class="box">
+            <?php if(empty(session('userId'))): ?>
             <a href="<?php echo U('User/login');?>">登录</a>&nbsp;&nbsp;&nbsp;<a href="<?php echo U('User/register');?>">免费注册</a>&nbsp;&nbsp;<a href="/index.php?s=">宝岛官网</a>
+            <?php endif; ?>
+
+            <?php if(!empty(session('userId'))): ?>
+            <a href="<?php echo U('User/index');?>"><?php echo session('nickname'); ?></a>&nbsp;&nbsp;&nbsp;<a href="<?php echo U('User/logout');?>">退出</a>&nbsp;&nbsp;<a href="/index.php?s=">宝岛官网</a>
+            <?php endif; ?>
+
         </div>
     </div><!--top1 end-->
     <div class="top2">
-        <a href="index.html" class="logo"><img src="/Public/Jf/images/logo.png"></a>
+        <a href="/index.php?s=" class="logo"><img src="/Public/Jf/images/logo.png"></a>
         <div class="nav">
             <ul>
                 <li><a href="/index.php?s=">积分商城首页</a></li>
-                <li><a href="gift.html">积分礼品</a></li>
-                <li><a href="ticket.html">积分换券</a></li>
-                <li><a href="activity.html">礼品活动</a></li>
+                <li><a href="<?php echo U('Article/index', array('category'=>'jfdh'));?>">积分礼品</a></li>
+                <li><a href="<?php echo U('Article/index', array('category'=>'jfhj'));?>">积分换券</a></li>
+                <li><a href="<?php echo U('Article/index', array('category'=>'lphd'));?>">礼品活动</a></li>
             </ul>
         </div><!--nav end-->
         <div class="clear"></div>
@@ -164,10 +173,10 @@
 	<!-- 底部 -->
 	<div class="foot">
     <ul>
-        <li><a href="index.html">积分商城首页</a></li>
-        <li><a href="gift.html">积分礼品</a></li>
-        <li><a href="ticket.html">积分换券</a></li>
-        <li><a href="activity.html">礼品活动</a></li>
+        <li><a href="/index.php?s=">积分商城首页</a></li>
+        <li><a href="<?php echo U('Article/index', array('category'=>'jfdh'));?>">积分礼品</a></li>
+        <li><a href="<?php echo U('Article/index', array('category'=>'jfhj'));?>">积分换券</a></li>
+        <li><a href="<?php echo U('Article/index', array('category'=>'lphd'));?>">礼品活动</a></li>
     </ul>
     <div class="clear"></div>
     <p>Copyright© 2008-2014 bodo.com，All Rights Reserved 版权所有天津宝岛电动车 津ICP备12345678号-1  使用本网站即表示接受宝岛用户协议。</p>

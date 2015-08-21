@@ -21,6 +21,7 @@ a{
 
 /*头部*/
 .top1{
+	min-width:1200px;
 	height:29px;
 	line-height:29px;
 	background:#f2f2f2;
@@ -615,4 +616,194 @@ a{
 }
 .forget table .change{
 	color:#1a1a1a;
+}
+
+/*个人中心*/
+.line2{
+	min-width:1200px;
+	height:1px;
+	background:#d9d9d9;	
+}
+.personal_left{
+	float:left;
+	width:200px;
+	height:528px;
+	background:#eee;
+	font-family:"微软雅黑";
+}
+.personal_left .title{
+	font-size:20px;
+	font-weight:bold;
+	color:#404040;
+	margin-left:30px;
+	margin-top:26px;
+	margin-bottom:18px;
+}
+.personal_left ul{
+	margin-left:30px;
+}
+.personal_left li{
+	width:117px;
+	height:31px;
+	line-height:30px;
+	margin-bottom:10px;
+	font-size:14px;
+}
+.personal_left li:hover{
+	height:30px;
+	border-bottom:1px solid #404040;
+}
+.personal_left li a{
+	color:#1a1a1a;
+	display:block;
+}
+
+.personal_right{
+	float:left;
+	width:998px;
+	min-height:660px;
+	border:1px solid #eee;
+	font-family:"微软雅黑";
+}
+.personal_right .right_top{
+	height:50px;
+	border-bottom:1px solid #eee;
+	background:#f7f7f7;
+}
+.personal_right .right_top .title{
+	width:86px;
+	border-bottom:2px solid #ff0000;
+	height:34px;
+	line-height:34px;
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	padding:16px 7px 0;
+	margin-left:45px;
+	float:left;
+}
+.personal_right .right_top a{
+	float:right;
+	margin-right:30px;
+	margin-top:18px;
+}
+.personal_right .right_info{
+	padding:22px 28px;
+}
+
+/*我的资料*/
+.personal_table{
+	border-bottom:1px solid #ccc;
+	padding:0 50px;
+}
+.personal_table span{
+	color:#ff0000;
+	margin-right:6px;
+}
+.personal_table .radio{
+	float:left;
+}
+.personal_table font{
+	float:left;
+	margin:0 25px 0 5px;
+}
+.personal_table .select1{
+	width:128px;
+	height:30px;
+	border:1px solid #ccc;
+	font-size:14px;
+}
+.personal_table .select2{
+	width:78px;
+	height:30px;
+	border:1px solid #ccc;
+	font-size:14px;
+}
+.personal_table .textbox1{
+	width:190px;
+	height:30px;
+	border:1px solid #ccc;
+	padding:0 5px;
+}
+.personal_table .textbox2{
+	width:458px;
+	height:30px;
+	border:1px solid #ccc;
+	padding:0 5px;
+}
+.personal_btn{
+	margin:25px 0;
+}
+.personal_btn .button{
+	width:100px;
+	height:34px;
+	line-height:34px;
+	background:#ff0000;
+	color:#fff;
+	border:0;
+	border-radius:2px;
+	font-size:14px;
+}
+.personal_btn .reset{
+	border:0;
+	background:none;
+	color:#1a1a1a;
+	margin-left:20px;
+}
+
+/*积分管理*/
+.personal_point{
+	height:80px;
+	margin:30px 0 0;
+}
+.personal_point .pointbox{
+	font-size:14px;
+	color:#333;
+	width:244px;
+	border-right:1px solid #ececec;
+	text-align:center;
+}
+.personal_point .pointbox span{
+	font-size:30px;
+	color:#ff0000;
+}
+.personal_point a{
+	float:right;
+	font-size:14px;
+	margin:10px 45px 10px 0;
+}
+
+.personal_gift{
+	margin:17px 55px;
+}
+
+/*我的订单*/
+.personal_order{
+	margin:0 30px;
+}
+.personal_order li{
+	margin-top:20px;
+}
+.personal_order table{
+	width:945px;
+	border-collapse:collapse;
+	font-size:14px;
+}
+.personal_order table td{
+	border:1px solid #eee;
+	text-align:center;
+}
+.personal_order table .sm{
+	font-size:12px;
+	color:#808080;
+}
+.personal_order table a,.personal_order table span{
+	color:#ff0000;
+}
+.personal_order table .num{
+	text-align:left;
+	height:48px;
+	background:#f2f2f2;
+	color:#1a1a1a;
+	padding:0 10px;
 }

@@ -1,0 +1,61 @@
+<extend name="Base/common"/>
+<block name="body">
+    <div class="head">
+        <include file="Public/jf_nav"/>
+
+    </div>
+    <div class="line2"></div>
+    <div class="main">
+        <div class="position">
+            您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="personal_01.html">个人中心</a>
+        </div><!--position end-->
+        <div class="personal">
+            <div class="personal_left">
+                <div class="title">个人中心</div>
+                <include file="Public/user_nav"/>
+            </div><!--personal_left end-->
+            <div class="personal_right">
+                <div class="right_top">
+                    <div class="title">积分管理</div>
+                </div>
+                <div class="personal_point">
+                    <div class="pointbox left">总积分：<span><?php echo $data['jifen'] ?></span></div>
+                    <div class="pointbox left">可用积分：<span><?php echo $data['jifen'] ?></span></div>
+                    <div class="pointbox left" style="border:0">即将过期积分：<span>0</span></div>
+                    <a href="">查看可兑换的礼品&gt;&gt;</a>
+                </div><!--personal_point end-->
+                <div class="right_top">
+                    <div class="title">可兑换的礼品</div><a href="">查看更多&gt;&gt;</a>
+                </div>
+                <div class="clear"></div>
+                <div class="index_list personal_gift">
+                    <ul>
+                        <li>
+                            <div class="pic" style="background:url(images/img_01.jpg) no-repeat;"></div><!--pic end-->
+                            <div class="tit">自行车包前梁包横梁手机包</div>
+                            <a href=""><div class="btn">立即购买</div></a>
+                            <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
+                        </li>
+                        <li>
+                            <div class="pic" style="background:url(images/img_02.jpg) no-repeat;"></div><!--pic end-->
+                            <div class="tit">自行车灯前灯充电强光手电筒</div>
+                            <a href=""><div class="btn">立即购买</div></a>
+                            <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
+                        </li>
+                        <li>
+                            <div class="pic" style="background:url(images/img_03.jpg) no-repeat;"></div><!--pic end-->
+                            <div class="tit">骑行背包自行车包骑行装备</div>
+                            <a href=""><div class="btn">立即购买</div></a>
+                            <div class="points"><span>30</span>积分&nbsp;或&nbsp;<span>5</span>RMB</div>
+                        </li>
+
+                    </ul>
+                    <div class="clear"></div>
+                </div><!--index_list end-->
+            </div>
+            <div class="clear"></div>
+        </div><!--personal end-->
+    </div>
+
+
+</block>
