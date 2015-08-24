@@ -8,6 +8,8 @@
 
 <script type="text/javascript" src="/Public/Jf/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Jf/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Public/Jf/layer/layer.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.flexslider').flexslider({
@@ -64,6 +66,7 @@
             您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="gift.html">积分礼品</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="product.html">INBIKE骑行头盔</a>
         </div><!--position end-->
         <div class="product">
+            <form id="good_form">
             <div class="pic"><img src="<?php echo (get_cover($info["cover_id"],'path')); ?>" width="280" height="313"></div>
             <div class="right">
                 <div class="price">
@@ -76,8 +79,9 @@
                 <div class="number">
                     <font style="float:left;line-height:37px;">兑换数量：</font>
                     <input class="min" name="" type="button" value="">
-                    <input class="text_box" name="" type="text" value="1">
-                    <input class="add" name="" type="button" value="">
+                    <input class="text_box" name="good_num" type="text" value="1">
+                    <input type="hidden" value="<?php echo ($info["id"]); ?>"  name="good_id"/>
+                    <input class="add" type="button" value="">
                     <div class="clear"></div>
                 </div><!--number end-->
                 <script>
@@ -107,11 +111,12 @@
 
                     })
                 </script>
-                <a href=""><img src="/Public/Jf/images/btn1.png"></a>
+                <a href="javascript:;" id="jf_dh"><img src="/Public/Jf/images/btn1.png"></a>
                 <a href="" style="margin-left:5px;"><img src="/Public/Jf/images/btn2.png"></a>
             </div><!--right end-->
             <div class="clear"></div>
         </div><!--product end-->
+        </form>
         <div class="productinfo">
             <div class="tit">商品信息</div>
             <div class="textinfo">
@@ -119,6 +124,39 @@
             </div><!--textinfo end-->
         </div><!--productinfo end-->
     </div>
+    <script>
+        $(function(){
+            $("#jf_dh").click(function(){
+                data = $("#good_form").serialize();
+                $.ajax({
+                    url: "<?php echo U('ajax_order');?>",
+                    data: data,
+                    type: "POST",
+                    success: function (msg) {
+                        if(msg == 1){
+                            layer.alert("兑换成功",{icon:6});
+
+                        }else if(msg == 2){
+                            layer.alert("积分不足",{icon:5});
+
+                        }else if(msg == 3){
+                            layer.alert("请先登录",{icon:5});
+                            window.location.href="<?php echo U('User/register');?>";
+
+                        }else if(msg ==6 ){
+                            layer.alert('请填写收获地址', {icon:5});
+                            window.location.href="<?php echo U('User/shopAddress');?>"
+                        }else{
+                            layer.alert('非法请求');
+                        }
+
+                    }
+                });
+
+            });
+
+        });
+    </script>
 
  </div>
 	<!-- /主体 -->

@@ -80,7 +80,7 @@
     </h3>
     <h3>
         <i class="icon icon-fold"></i>
-        <a class="item" href="/admin.php?s=/Goods/addQuan">生成积分券</a>
+        <a class="item" href="/admin.php?s=/Goods/listQuan">生成积分券</a>
     </h3>
 
 

@@ -8,6 +8,8 @@
 
 <script type="text/javascript" src="/Public/Jf/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Jf/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Public/Jf/layer/layer.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.flexslider').flexslider({
@@ -80,7 +82,7 @@
                     <div class="pointbox left">总积分：<span><?php echo $data['jifen'] ?></span></div>
                     <div class="pointbox left">可用积分：<span><?php echo $data['jifen'] ?></span></div>
                     <div class="pointbox left" style="border:0">即将过期积分：<span>0</span></div>
-                    <a href="">查看可兑换的礼品&gt;&gt;</a>
+                    <a href="<?php echo U('User/jfChange');?>">兑换积分&gt;&gt;</a>
                 </div><!--personal_point end-->
                 <div class="right_top">
                     <div class="title">可兑换的礼品</div><a href="">查看更多&gt;&gt;</a>

@@ -8,6 +8,8 @@
 
 <script type="text/javascript" src="/Public/Jf/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Jf/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Public/Jf/layer/layer.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.flexslider').flexslider({
@@ -85,7 +87,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="rule.html">
+                    <a href="<?php echo U('rule');?>">
                         <div class="ico"><img src="/Public/Jf/images/ico_04.png"></div>
                         <div class="text">积分规则</div><!--text end-->
                     </a>
@@ -159,7 +161,8 @@
  $jfdhPro = M('DocumentProduct')->find($value['id']); ?>
                 <?php
  $pic=M('Picture')->field('path')->find($value['cover_id']); ?>
-                <li><a href="<?php echo U('article/detail',array('id'=>$value['id']));?>"><img src="<?php echo $pic['path']; ?>"></a></li>
+                <li><a href="<?php echo U('article/detail',array('id'=>$value['id']));?>">
+                    <img style="width:283px; height: 113px" src="<?php echo $pic['path']; ?>"></a></li>
                <?php endforeach; ?>
             </ul>
             <div class="clear"></div>

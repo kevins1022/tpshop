@@ -315,6 +315,68 @@ class ArticleController extends HomeController {
 		$this->meta_title = $info["title"];
 		$this->display($tmpl);
 		}
+
+
+    public function ajax_order(){
+        if(IS_AJAX){
+            $id = session('userId');
+            if(empty($id)){
+                echo 3;// 用户没有登录
+                die();
+
+            }
+            $mem_add = M("userShopAdd")->where("uid=$id")->find();
+            if(!$mem_add){
+                echo 6; //收货地址不存在
+                die();
+
+            }
+            extract($_POST);
+           $row = M("documentProduct")->find($good_id);
+            if($row){
+                $jf_good = $row['jifen'];
+                $member = M("member")->find($id);
+                if($member['jifen'] < $jf_good*$good_num){
+                    echo 2;//积分不足
+                    die();
+
+                }
+                $data_order['uid'] = $id;
+                $data_order['good_id'] = $good_id;
+                $data_order['status'] = 1;
+                $data_order['type'] = 1;//1 积分兑换 2直接购买
+                $data_order['addtime'] = time();
+                $data_order['num'] = $good_num;
+                $data_order['sum'] = $good_num*$row['jifen'];
+                $good = M("document")->find($good_id);
+                $data_order['category'] = $good['category_id'];
+                $res1 = M("jforder")->add($data_order);
+                $member_data['uid'] = $id;
+                $old_member = M("member")->find($id);
+                $member_data['jifen'] = $old_member['jifen']-$row['jifen']*$good_num;
+                $member_data['uid'] = $id;
+                $res2 = M("member")->save($member_data);
+                if($res1 && $res2){
+                    echo 1;
+
+                }else{
+                    echo 4;
+                    die();
+                }
+
+
+
+            }else{
+                echo 5;
+                die();
+            }
+        }else{
+            $this->error("非法请求！");
+        }
+    }
+
+
+
 /* ajax评论-所有评论 */
  public function comment(){	
 	 if($_POST["goodid"])

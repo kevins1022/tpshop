@@ -6,69 +6,66 @@
 </block>
 
 <block name="body">
-    <!-- 标题 -->
-    <div class="main-title">
 
-    </div>
-
-    <!-- 按钮工具栏 -->
     <div class="cf">
         <div class="fl">
             <div class="btn-group">
 
-              <h1><a href="{:U(listQuan)}">返回列表</a></h1>
+                <h1><a href="{:U(listQuan)}">返回列表</a></h1>
 
             </div>
 
         </div>
     </div>
 
-    <!-- 数据表格 -->
-    <div class="data-table">
-        <div class="form-item cf">
-            <label class="item-label">面值
+    <form action="__SELF__" method="post">
+        <div class="data-table">
+            <div class="form-item cf">
+                <label class="item-label">面值
 
-            </label>
+                </label>
 
-            <div class="controls">
-                <select name="jifen" id="" class="text input-large" >
-                    <option value="5">5元</option>
-                    <option value="10">10元</option>
-                    <option value="50">50元</option>
-                    <option value="100">100元</option>
-                </select>
+                <div class="controls">
+                    <select name="jifen" id="" class="text input-large">
+                        <option value="5">5积分</option>
+                        <option value="10">10积分</option>
+                        <option value="50">50积分</option>
+                        <option value="100">10积分</option>
+                    </select>
+
+                </div>
+
+            </div>
+            <br/>
+
+            <div class="form-item cf">
+                <label class="item-label">张数
+
+                </label>
+
+                <div class="controls">
+                    <input type="text" class="text input-large"name="length"/>
+
+                </div>
+
+            </div>
+            <br/>
+
+            <div class="form-item cf">
+
+
+                <div class="controls">
+
+                    <button type="submit" class="btn">确定</button>
+                </div>
 
             </div>
 
         </div>
-        <br/>
-
-        <div class="form-item cf">
-            <label class="item-label">张数
-
-            </label>
-
-            <div class="controls">
-                <input type="text" class="text input-large"/>
-
-            </div>
-
-        </div>
-        <br/>
-        <div class="form-item cf">
-
-
-            <div class="controls">
-
-                <button type="submit" class="btn">确定</button>
-            </div>
-
-        </div>
-
-    </div>
+    </form>
     <!-- 分页 -->
 
-    </div>
+
 
 </block>
 

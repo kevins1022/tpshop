@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="rule.html">
+                    <a href="{:U('rule')}">
                         <div class="ico"><img src="__PUBLIC__/Jf/images/ico_04.png"></div>
                         <div class="text">积分规则</div><!--text end-->
                     </a>
@@ -128,7 +128,8 @@
                         $pic=M('Picture')->field('path')->find($value['cover_id']);
 
                 ?>
-                <li><a href="{:U('article/detail',array('id'=>$value['id']))}"><img src="<?php echo $pic['path']; ?>"></a></li>
+                <li><a href="{:U('article/detail',array('id'=>$value['id']))}">
+                    <img style="width:283px; height: 113px" src="<?php echo $pic['path']; ?>"></a></li>
                <?php endforeach; ?>
             </ul>
             <div class="clear"></div>

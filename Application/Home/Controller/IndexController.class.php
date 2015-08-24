@@ -25,12 +25,17 @@ class IndexController extends HomeController {
         $this->jflp = $jflp;
         $lphd= M('document')->order('id desc')->where("category_id='152'")->limit(8)->select();
         $this->lphd = $lphd;
-        $jfhq = M('document')->order('id desc')->where("category_id='153'")->limit(8)->select();
+        $jfhq = M('document')->order('id desc')->where("category_id='153'")->limit(4)->select();
         $this->jfhq = $jfhq;
 
 
         $this->meta_title = '首页';
         $this->display();
+    }
+    public function rule(){
+        $this->meta_title = '积分规则';
+        $this->display();
+
     }
 		/**无限极分类菜单调用**/
  public function menulist(){

@@ -1,0 +1,70 @@
+<extend name="Base/common"/>
+<block name="body">
+    <div class="head">
+        <include file="Public/jf_nav"/>
+
+    </div>
+    <div class="line2"></div>
+    <div class="main">
+        <div class="position">
+            您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="personal_01.html">个人中心</a>
+        </div><!--position end-->
+        <div class="personal">
+            <div class="personal_left">
+                <div class="title">个人中心</div>
+                <include file="Public/user_nav"/>
+            </div><!--personal_left end-->
+            <div class="personal_right">
+                <div class="right_top"><div class="title">积分兑换</div></div>
+                <div class="right_info">
+
+                    <form method="post" action="__SELF__" id="pro_form">
+                        <div class="personal_table">
+                            <table border="0">
+                                <tbody>
+
+                                <tr height="50">
+                                    <td align="right"><span>*</span>积分：</td>
+                                    <td>
+                                        <?php
+
+                                                $jifen=M("jfquan")->distinct(true)->field('jifen')->select();
+
+
+
+                                        ?>
+                                        <select class="select1" name="jifen" >
+                                            <option>请选择</option>
+                                            <?php foreach($jifen as $key => $value): ?>
+                                            <option value="<?php echo $value['jifen'] ?>"><?php echo $value['jifen'] ?>积分</option>
+
+                                            <?php endforeach; ?>
+
+
+
+                                        </select>
+
+
+                                    </td>
+                                </tr>
+                                <tr height="50">
+                                    <td align="right"><span>*</span>兑换码：</td>
+                                    <td><input type="text" class="textbox1" name="jfvalue" value="" style="width:300px"></td>
+                                </tr>
+
+
+                                </tbody></table>
+                        </div><!--personal_table end-->
+                        <div align="center" class="personal_btn">
+                            <input type="submit" value="提交" class="button" style="cursor: pointer">
+
+                        </div>
+                    </form>
+                </div><!--right_info end-->
+            </div>
+            <div class="clear"></div>
+        </div><!--personal end-->
+    </div>
+
+
+</block>

@@ -21,24 +21,55 @@ class GoodsController extends AdminController {
 
     private $cate_id        =   null; //文档分类id
 
+
     /**
-     * 检测需要动态判断的文档类目有关的权限
-     *
-     * @return boolean|null
-     *      返回true则表示当前访问有权限
-     *      返回false则表示当前访问无权限
-     *      返回null，则会进入checkRule根据节点授权判断权限
-     *
-     * @author 朱亚杰  <xcoolcc@gmail.com>
+     * 积分券列表
      */
     public function listQuan(){
-        //echo 1;
+        $data =  M("jfquan")->order("id desc")->select();
+        $this->data = $data;
         $this->display();
     }
+
+    /**
+     * 添加积分券
+     */
     public function addQuan(){
+        if(IS_POST){
+            $data['jifen'] = $_POST['jifen'];
+            //$data['time'] = time();
+            $data['status'] = 0;
+            $len=$_POST['length'];
+            for($i=0;$i<$len;$i++){
+                $data['time'] = time();
+                $data['jfkey'] = (string)time().$i;
+                $data['jfvalue'] = md5($data['jfkey']);
+                $res=M('jfquan')->add($data);
+            }
+            if($res){
+                $this->success("添加成功");
+                die();
+            }else{
+                $this->error("添加失败");
+            }
+
+
+        }
 
         $this->display();
 
+
+    }
+
+    /**
+     * 订单列表
+     */
+    public function shopOrder(){
+        $id = $_GET['cate_id'];
+        $jfOrder = M("jforder")->where("category=$id")->select();
+        $this->order = $jfOrder;
+
+        $this->display();
 
     }
     protected function checkDynamic(){

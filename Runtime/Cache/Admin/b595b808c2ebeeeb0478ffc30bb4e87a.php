@@ -35,10 +35,15 @@
         <ul class="main-nav">
             <?php if(is_array($__MENU__["main"])): $i = 0; $__LIST__ = $__MENU__["main"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><!--<li class="<?php echo ((isset($menu["class"]) && ($menu["class"] !== ""))?($menu["class"]):''); ?>"><a href="<?php echo (get_nav_url($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a></li>--><?php endforeach; endif; else: echo "" ;endif; ?>
             <li class=""><a href="/admin.php?s=/Index/index.html">首页</a></li>
-            <li class="current"><a href="/admin.php?s=/Goods/index.html">商品</a></li>
-            <li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>
-            <li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>
-			<li><a href="<?php echo get_index_url();?>" target="_blank">前台</a></li>
+            <li><a href="<?php echo U('Goods/index/cate_id/151');?>">积分礼品</a></li>
+            <li><a href="<?php echo U('Goods/index/cate_id/152');?>">礼品活动</a></li>
+            <li><a href="<?php echo U('Goods/index/cate_id/153');?>">积分换券</a></li>
+            <li><a href="<?php echo U('User/index');?>">用户</a></li>
+
+            <!--<li class=""><a href="/admin.php?s=/Goods/index.html">商品</a></li>-->
+            <!--<li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>-->
+            <!--<li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>-->
+			<!--<li><a href="<?php echo get_index_url();?>" target="_blank">前台</a></li>-->
         </ul>
         <!-- /主导航 -->
 
@@ -47,8 +52,8 @@
             <a href="javascript:;" class="user-entrance"><i class="icon-user"></i></a>
             <ul class="nav-list user-menu hidden">
                 <li class="manager">你好，<em title="<?php echo session('user_auth.username');?>"><?php echo session('user_auth.username');?></em></li>
-                <li><a href="<?php echo U('User/updatePassword');?>">修改密码</a></li>
-                <li><a href="<?php echo U('User/updateNickname');?>">修改昵称</a></li>
+                <!--<li><a href="<?php echo U('User/updatePassword');?>">修改密码</a></li>-->
+                <!--<li><a href="<?php echo U('User/updateNickname');?>">修改昵称</a></li>-->
                 <li><a href="<?php echo U('Public/logout');?>">退出</a></li>
             </ul>
         </div>
@@ -93,8 +98,8 @@
         </div>
         <div class="cont-ft">
             <div class="copyright">
-                <div class="fl">感谢使用<a href="http://www.yershop.com" target="_blank">YerShop</a>商城系统</div>
-                <div class="fr">V<?php echo (ONETHINK_VERSION); ?></div>
+
+                <div class="fr">ThinkPHP</div>
             </div>
         </div>
     </div>

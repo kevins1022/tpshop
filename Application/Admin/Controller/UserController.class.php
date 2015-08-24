@@ -10,17 +10,11 @@
 namespace Admin\Controller;
 use User\Api\UserApi;
 
-/**
- * 后台用户控制器
- * @author 麦当苗儿 <zuojiazi@vip.qq.com>
- */
+
 class UserController extends AdminController {
 
-    /**
-     * 用户管理首页
-     * @author 麦当苗儿 <zuojiazi@vip.qq.com>
-     */
-    public function index(){
+
+    public function index1(){
         $nickname       =   I('nickname');
         $map['status']  =   array('egt',0);
         if(is_numeric($nickname)){
@@ -33,6 +27,15 @@ class UserController extends AdminController {
         int_to_string($list);
         $this->assign('_list', $list);
         $this->meta_title = '用户信息';
+        $this->display();
+    }
+
+    /**
+     * 用户列表显示
+     */
+    public function index(){
+        $data = M("member")->order("uid desc")->select();
+        $this->data = $data;
         $this->display();
     }
 

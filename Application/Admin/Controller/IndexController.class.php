@@ -20,15 +20,24 @@ class IndexController extends AdminController {
      * 后台首页
      * @author 麦当苗儿 <zuojiazi@vip.qq.com>
      */
-    public function index(){
-   $damain=$_SERVER['SERVER_NAME'];
+    public function index1(){
+        $damain=$_SERVER['SERVER_NAME'];
         $this->assign('data',$damain); 
 	    $url="http://".$damain.__ROOT__;
         M("config")->where("name='DOMAIN'")->setField('value',$url);
   
-	 $this->meta_title = '管理首页';
+	    $this->meta_title = '管理首页';
       
 		 $this->display();
+    }
+    public function index(){
+        $url = U('/Goods/index',array('cate_id'=>'151'));
+        //var_dump($_SERVER['HTTP_HOST']);
+        $url ="http://".$_SERVER['HTTP_HOST'].$url;
+//        echo $url;
+//        die();
+        //$this->redirect($url);
+        header("Location:$url");
     }
 
    public function insert(){

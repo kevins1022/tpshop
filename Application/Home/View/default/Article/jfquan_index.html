@@ -1,0 +1,55 @@
+<extend name="Base/common"/>
+
+
+
+<block name="body">
+
+    <div class="head">
+        <include file="Public/jf_nav"/>
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background:url(__PUBLIC__/Jf/images/banner_01.jpg) 50% 0 no-repeat;"></li>
+                <li style="background:url(__PUBLIC__/Jf/images/banner_01.jpg) 50% 0 no-repeat;"></li>
+            </ul>
+        </div><!--flexslider end-->
+    </div>
+    <div class="main">
+        <a href="" class="btn_me"><img src="__PUBLIC__/Jf/images/btn_me.png"></a>
+        <div class="position">
+            您现在的位置是：&nbsp;<a href="index.html">积分商城首页</a>&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;<a href="gift.html">积分礼品</a>
+        </div><!--position end-->
+        <div class="search2">
+            <span>礼品积分分段：</span>&nbsp;&nbsp;
+            <a href="">全部</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">0-4000</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">4000-8000</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">8000以上</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            积分：<input type="text">&nbsp;至&nbsp;<input type="text">
+            <a href="" class="btn">查询</a>
+        </div><!--search2 end-->
+        <div class="sort">
+            <span>排序：</span>
+            <a href=""><div class="btn">默认</div></a>
+            <a href=""><div class="btn">最新</div></a>
+            <a href=""><div class="btn">最热</div></a>
+            <a href=""><div class="btn" style="width:90px; background:url(__PUBLIC__/Jf/images/arrow.jpg) no-repeat center right;">积分</div></a>
+            <div class="clear"></div>
+        </div><!--sort end-->
+        <div class="line"></div>
+        <div class="list_ticket">
+            <ul>
+                <volist name="list" id="list"  empty="暂时没有数据" >
+                <li>
+                    <img src="{$list.cover_id|get_cover='path'}" width="480" height="192">
+                    <a href="{:U('User/jfChange')}"><div class="btn">去兑换</div></a>
+                    <div class="tit">{$list.title}</div>
+                    <div class="point">{$list.jifen}分<span></span></div>
+                </li>
+                </volist>
+
+            </ul>
+            <div class="clear"></div>
+        </div><!--index_list end-->
+    </div>
+
+</block>

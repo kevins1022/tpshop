@@ -31,10 +31,16 @@
         <ul class="main-nav">
             <?php if(is_array($__MENU__["main"])): $i = 0; $__LIST__ = $__MENU__["main"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><!--<li class="<?php echo ((isset($menu["class"]) && ($menu["class"] !== ""))?($menu["class"]):''); ?>"><a href="<?php echo (get_nav_url($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a></li>--><?php endforeach; endif; else: echo "" ;endif; ?>
             <li class=""><a href="/admin.php?s=/Index/index.html">首页</a></li>
-            <li class="current"><a href="/admin.php?s=/Goods/index.html">商品</a></li>
-            <li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>
-            <li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>
-			<li><a href="<?php echo get_index_url();?>" target="_blank">前台</a></li>
+            <li><a href="<?php echo U('Goods/index/cate_id/151');?>">积分礼品</a></li>
+            <li><a href="<?php echo U('Goods/index/cate_id/152');?>">礼品活动</a></li>
+            <li><a href="<?php echo U('Goods/index/cate_id/153');?>">积分换券</a></li>
+            <li><a href="<?php echo U('User/index');?>">用户</a></li>
+            <li><a href="<?php echo get_index_url();?>" target="_blank">前台</a></li>
+
+            <!--<li class=""><a href="/admin.php?s=/Goods/index.html">商品</a></li>-->
+            <!--<li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>-->
+            <!--<li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>-->
+			<!--<li><a href="<?php echo get_index_url();?>" target="_blank">前台</a></li>-->
         </ul>
         <!-- /主导航 -->
 
@@ -43,8 +49,8 @@
             <a href="javascript:;" class="user-entrance"><i class="icon-user"></i></a>
             <ul class="nav-list user-menu hidden">
                 <li class="manager">你好，<em title="<?php echo session('user_auth.username');?>"><?php echo session('user_auth.username');?></em></li>
-                <li><a href="<?php echo U('User/updatePassword');?>">修改密码</a></li>
-                <li><a href="<?php echo U('User/updateNickname');?>">修改昵称</a></li>
+                <!--<li><a href="<?php echo U('User/updatePassword');?>">修改密码</a></li>-->
+                <!--<li><a href="<?php echo U('User/updateNickname');?>">修改昵称</a></li>-->
                 <li><a href="<?php echo U('Public/logout');?>">退出</a></li>
             </ul>
         </div>
@@ -55,104 +61,50 @@
     <div class="sidebar">
         <!-- 子导航 -->
         
-    <div id="subnav" class="subnav">
-    <?php if(!empty($_extra_menu)): ?>
-        <?php echo extra_menu($_extra_menu,$__MENU__); endif; ?>
-    <?php if(is_array($__MENU__["child"])): $i = 0; $__LIST__ = $__MENU__["child"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub_menu): $mod = ($i % 2 );++$i;?><!-- 子导航 -->
-        <?php if(!empty($sub_menu)): if(!empty($key)): ?><h3><i class="icon icon-unfold"></i><?php echo ($key); ?></h3><?php endif; ?>
-            <ul class="side-sub-menu">
-                <?php if(is_array($sub_menu)): $i = 0; $__LIST__ = $sub_menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><li>
-                        <a class="item" href="<?php echo (U($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a>
-                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
-            </ul><?php endif; ?>
-        <!-- /子导航 --><?php endforeach; endif; else: echo "" ;endif; ?>
-    <h3>
-    <i class="icon icon-fold"></i>
-    <a class="item" href="/admin.php?s=/Goods/index/cate_id/151.html">积分礼品</a>
-    </h3>
-    <h3>
-        <i class="icon icon-fold"></i>
-        <a class="item" href="/admin.php?s=/Goods/index/cate_id/152.html">礼品活动</a>
-    </h3>
-    <h3>
-        <i class="icon icon-fold"></i>
-        <a class="item" href="/admin.php?s=/Goods/index/cate_id/153.html">积分换券</a>
-    </h3>
-    <h3>
-        <i class="icon icon-fold"></i>
-        <a class="item" href="/admin.php?s=/Goods/addQuan">生成积分券</a>
-    </h3>
-
-
-    <!--<h3>-->
-        <!--<i class="icon <?php if(($sub_menu['current']) != "1"): ?>icon-fold<?php endif; ?>"></i>-->
-        <!--<?php if(($sub_menu['allow_publish']) > "0"): ?>-->
-            <!--<a class="item" href="<?php echo (U($sub_menu["url"])); ?>"><?php echo ($sub_menu["title"]); ?></a><?php else: echo ($sub_menu["title"]); ?>-->
-        <!--<?php endif; ?>-->
-    <!--</h3>-->
-
-    <!--<?php if(is_array($nodes)): $i = 0; $__LIST__ = $nodes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub_menu): $mod = ($i % 2 );++$i;?>-->
-        <!--&lt;!&ndash; 子导航 &ndash;&gt;-->
-        <!--<?php if(!empty($sub_menu)): ?>-->
-            <!--<h3>-->
-            	<!--<i class="icon <?php if(($sub_menu['current']) != "1"): ?>icon-fold<?php endif; ?>"></i>-->
-            	<!--<?php if(($sub_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($sub_menu["url"])); ?>"><?php echo ($sub_menu["title"]); ?></a><?php else: echo ($sub_menu["title"]); endif; ?>-->
-            <!--</h3>-->
-            <!--<ul style="display:none" class="side-sub-menu <?php if(($sub_menu["current"]) != "1"): ?>subnav-off<?php endif; ?>" >-->
-                <!--<?php if(is_array($sub_menu['_child'])): $i = 0; $__LIST__ = $sub_menu['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?>-->
-                    <!--<li <?php if($menu['id'] == $cate_id or $menu['current'] == 1): ?>class="current"<?php endif; ?>>-->
-                        <!--<?php if(($menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($menu["url"])); ?>"><?php echo ($menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($menu["title"]); ?></a><?php endif; ?>-->
-
-                        <!--&lt;!&ndash; 一级子菜单 &ndash;&gt;-->
-                        <!--<?php if(isset($menu['_child'])): ?>-->
-                        <!--<ul class="subitem">-->
-                        	<!--<?php if(is_array($menu['_child'])): foreach($menu['_child'] as $key=>$three_menu): ?>-->
-                            <!--<li>-->
-                                <!--<?php if(($three_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo (U($three_menu["url"])); ?>"><?php echo ($three_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($three_menu["title"]); ?></a><?php endif; ?>-->
-                                <!--&lt;!&ndash; 二级子菜单 &ndash;&gt;-->
-                                <!--<?php if(isset($three_menu['_child'])): ?>-->
-                                <!--<ul class="subitem">-->
-                                	<!--<?php if(is_array($three_menu['_child'])): foreach($three_menu['_child'] as $key=>$four_menu): ?>-->
-                                    <!--<li>-->
-                                        <!--<?php if(($four_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo U('index','cate_id='.$four_menu['id']);?>"><?php echo ($four_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($four_menu["title"]); ?></a><?php endif; ?>-->
-                                        <!--&lt;!&ndash; 三级子菜单 &ndash;&gt;-->
-                                        <!--<?php if(isset($four_menu['_child'])): ?>-->
-                                        <!--<ul class="subitem">-->
-                                        	<!--<?php if(is_array($four_menu['_child'])): $i = 0; $__LIST__ = $four_menu['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$five_menu): $mod = ($i % 2 );++$i;?>-->
-                                            <!--<li>-->
-                                            	<!--<?php if(($five_menu['allow_publish']) > "0"): ?><a class="item" href="<?php echo U('index','cate_id='.$five_menu['id']);?>"><?php echo ($five_menu["title"]); ?></a><?php else: ?><a class="item" href="javascript:void(0);"><?php echo ($five_menu["title"]); ?></a><?php endif; ?>-->
-                                            <!--</li>-->
-                                            <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-                                        <!--</ul>-->
-                                        <!--<?php endif; ?>-->
-                                        <!--&lt;!&ndash; end 三级子菜单 &ndash;&gt;-->
-                                    <!--</li>-->
-                                     <!--<?php endforeach; endif; ?>-->
-                                <!--</ul>-->
-                                <!--<?php endif; ?>-->
-                                <!--&lt;!&ndash; end 二级子菜单 &ndash;&gt;-->
-                            <!--</li>-->
-                            <!--<?php endforeach; endif; ?>-->
-                        <!--</ul>-->
-                        <!--<?php endif; ?>-->
-                        <!--&lt;!&ndash; end 一级子菜单 &ndash;&gt;-->
-                    <!--</li>-->
-                <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-            <!--</ul>-->
-        <!--<?php endif; ?>-->
-        <!--&lt;!&ndash; /子导航 &ndash;&gt;-->
-    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
     
+<!-- 子导航 -->
+<?php if($_GET['cate_id']==151): ?>
+<div id="subnav" class="subnav">
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="<?php echo U('Goods/index/cate_id/151');?>">积分礼品</a>
+    </h3>
+
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="<?php echo U('goods/shopOrder/cate_id/151');?>">订单管理</a>
+    </h3>
 </div>
-<script>
-//    $(function(){
-//        $(".side-sub-menu li").hover(function(){
-//            $(this).addClass("hover");
-//        },function(){
-//            $(this).removeClass("hover");
-//        });
-//    })
-</script>
+
+
+<?php elseif($_GET['cate_id']==152): ?>
+<div id="subnav" class="subnav">
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="<?php echo U('Goods/index/cate_id/152');?>">积分活动</a>
+    </h3>
+
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="<?php echo U('goods/shopOrder/cate_id/152');?>">订单管理</a>
+    </h3>
+</div>
+
+<?php else: ?>
+<div id="subnav" class="subnav">
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="<?php echo U('Goods/index/cate_id/153');?>">积分券添加</a>
+    </h3>
+
+    <h3>
+        <i class="icon icon-fold"></i>
+        <a class="item" href="<?php echo U('Goods/listQuan');?>">生成积分券</a>
+    </h3>
+
+</div>
+<?php endif; ?>
+
 
 
         <!-- /子导航 -->
@@ -190,7 +142,7 @@
         <div class="fl">
             <div class="btn-group">
 
-                    <a  class="btn " href="<?php echo U('addQuan');?>">新 增</a>
+                <a class="btn " href="<?php echo U('addQuan');?>">新 增</a>
 
             </div>
 
@@ -203,23 +155,26 @@
             <!-- 表头 -->
             <thead>
             <tr>
-                <th >
+                <th>
                     ID
                 </th>
-
-                    <th>面值</th>
-                    <th>密文</th>
-
-
+                <th>面值</th>
+                <th>密文</th>
+                <th>状态</th>
+                <th>添加时期</th>
             </tr>
             </thead>
-
-            <!-- 列表 -->
             <tbody>
-            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
-                    <td><input class="ids" type="checkbox" value="<?php echo ($data['id']); ?>" name="ids[]"></td>
-                    <?php if(is_array($list_grids)): $i = 0; $__LIST__ = $list_grids;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$grid): $mod = ($i % 2 );++$i;?><td><?php echo get_list_field($data,$grid);?></td><?php endforeach; endif; else: echo "" ;endif; ?>
-                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+            <?php foreach($data as $key=>$value): ?>
+            <tr>
+                <td><?php echo $value['id'] ?></td>
+                <td><?php echo $value['jifen'] ?>分</td>
+                <td><?php echo $value['jfvalue'] ?></td>
+                <td><?php echo $status = $value['status']==1?"已用":"未用"; ?></td>
+
+                <td><?php echo date("Y-m-d H:i:s", $value['time']) ?></td>
+            </tr>
+            <?php endforeach; ?>
             </tbody>
         </table>
     </div>
@@ -227,14 +182,14 @@
     <div class="page">
         <?php echo ($_page); ?>
     </div>
-    </div>
+
 
 
         </div>
         <div class="cont-ft">
             <div class="copyright">
-                <div class="fl">感谢使用<a href="http://www.yershop.com" target="_blank">YerShop</a>商城系统</div>
-                <div class="fr">V<?php echo (ONETHINK_VERSION); ?></div>
+
+                <div class="fr">ThinkPHP</div>
             </div>
         </div>
     </div>
@@ -325,93 +280,5 @@
         }();
     </script>
     
-    <link href="/Public/static/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
-    <?php if(C('COLOR_STYLE')=='blue_color') echo '<link href="/Public/static/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">'; ?>
-    <link href="/Public/static/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="/Public/static/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="/Public/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
-    <script type="text/javascript">
-        $(function(){
-            //搜索功能
-            $("#search").click(function(){
-                var url = $(this).attr('url');
-                var status = $("#sch-sort-txt").attr("data");
-                var query  = $('.search-form').find('input').serialize();
-                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
-                query = query.replace(/^&/g,'');
-                if(status != ''){
-                    query = 'status=' + status + "&" + query;
-                }
-                if( url.indexOf('?')>0 ){
-                    url += '&' + query;
-                }else{
-                    url += '?' + query;
-                }
-                window.location.href = url;
-            });
-
-            /* 状态搜索子菜单 */
-            $(".search-form").find(".drop-down").hover(function(){
-                $("#sub-sch-menu").removeClass("hidden");
-            },function(){
-                $("#sub-sch-menu").addClass("hidden");
-            });
-            $("#sub-sch-menu li").find("a").each(function(){
-                $(this).click(function(){
-                    var text = $(this).text();
-                    $("#sch-sort-txt").text(text).attr("data",$(this).attr("value"));
-                    $("#sub-sch-menu").addClass("hidden");
-                })
-            });
-
-            //只有一个模型时，点击新增
-            $('.document_add').click(function(){
-                var url = $(this).attr('url');
-                if(url != undefined && url != ''){
-                    window.location.href = url;
-                }
-            });
-
-            //点击排序
-            $('.list_sort').click(function(){
-                var url = $(this).attr('url');
-                var ids = $('.ids:checked');
-                var param = '';
-                if(ids.length > 0){
-                    var str = new Array();
-                    ids.each(function(){
-                        str.push($(this).val());
-                    });
-                    param = str.join(',');
-                }
-
-                if(url != undefined && url != ''){
-                    window.location.href = url + '/ids/' + param;
-                }
-            });
-
-            //回车自动提交
-            $('.search-form').find('input').keyup(function(event){
-                if(event.keyCode===13){
-                    $("#search").click();
-                }
-            });
-
-            $('#time-start').datetimepicker({
-                format: 'yyyy-mm-dd',
-                language:"zh-CN",
-                minView:2,
-                autoclose:true
-            });
-
-            $('#time-end').datetimepicker({
-                format: 'yyyy-mm-dd',
-                language:"zh-CN",
-                minView:2,
-                autoclose:true
-            });
-        })
-    </script>
-
 </body>
 </html>

@@ -54,6 +54,9 @@ class UserController extends HomeController
      * 收获地址
      */
     public function shopAddress(){
+        if(empty(session('nickname')) || empty(session('userId'))){
+            $this->error("非法请求");
+        }
         $id = session('userId');
         if(IS_POST){
             extract($_POST);
@@ -101,6 +104,9 @@ class UserController extends HomeController
      * 积分管理
      */
     public function jfManage(){
+        if(empty(session('nickname')) || empty(session('userId'))){
+            $this->error("非法请求");
+        }
         $id = session('userId');
         $row = M('Member')->find($id);
         if($row){
@@ -110,6 +116,41 @@ class UserController extends HomeController
         }
         $this->display();
 
+    }
+    public function jfChange(){
+        if(empty(session('nickname')) || empty(session('userId'))){
+            $this->error("请登录后兑换",U('login'));
+        }
+        if(IS_POST){
+            $uid = session('userId');
+            $map = $_POST;
+            $row = M("jfquan")->where($map)->find();
+            //var_dump($row);
+            //die();
+            if($row){
+
+                $member = M('member')->field('jifen')->find($uid);
+                $data['jifen'] = $_POST['jifen'] + $member['jifen'];
+                $data['uid'] = $uid;
+//                var_dump($data);
+//                die();
+                $res1 = M('member')->save($data);
+                $data_jf['status'] = 1;
+                $data_jf['id'] = $row['id'];
+                $res2 = M('jfquan')->save($data_jf);
+                if($res1 && $res2){
+                    $this->success("积分兑换成功！");
+                    die();
+                }else{
+                    $this->error("积分兑换失败！");
+                }
+            }else{
+                $this->error("兑换码不存在");
+            }
+
+        }
+
+        $this->display();
     }
 
     /**

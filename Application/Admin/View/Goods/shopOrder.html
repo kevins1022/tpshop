@@ -1,0 +1,80 @@
+<extend name="Public/base"/>
+
+<!-- 子导航 -->
+<block name="sidebar">
+    <include file="sidemenu"/>
+</block>
+
+<block name="body">
+    <!-- 标题 -->
+    <div class="main-title">
+        <h3>订单列表</h3>
+    </div>
+
+
+
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table>
+            <!-- 表头 -->
+            <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>商品名称</th>
+                <th>用户名称</th>
+                <th>数量</th>
+                <th>类型</th>
+                <th>总金额</th>
+                <th>添加日期</th>
+                <th>收获地址</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach($order as $key=>$value): ?>
+            <tr>
+                <td><?php echo $value['id'] ?></td>
+                <td>
+                    <?php
+                        $good = M("Document")->find($value['good_id']);
+                        echo $good['title'];
+
+                     ?>
+                </td>
+                <td>
+                    <?php
+                        $user = M("member")->find($value['uid']);
+                        echo $user['nickname'];
+                    ?>
+                </td>
+                <td><?php echo $value['num'] ?></td>
+
+                <td><?php echo $value['type']==1?'积分兑换': '直接购买' ?></td>
+                <td>
+                    <?php
+                        echo $value['sum'];
+                        echo $value['type']==1?'积分': '元';
+                    ?>
+                </td>
+                <td><?php echo date("Y-m-d: H:i:s", $value['addtime']); ?></td>
+                <td>
+                    <?php
+                        $map['uid'] = $value['uid'];
+                        $add = M("userShopAdd")->where($map)->find();
+                        echo "电话".$add['phone']." 地址".$add['address']." 真实姓名：".$add['truename'];
+                     ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <!-- 分页 -->
+    <div class="page">
+        {$_page}
+    </div>
+
+
+</block>
+

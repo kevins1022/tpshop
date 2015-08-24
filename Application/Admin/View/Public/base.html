@@ -34,10 +34,16 @@
 
             </volist>
             <li class=""><a href="/admin.php?s=/Index/index.html">首页</a></li>
-            <li class="current"><a href="/admin.php?s=/Goods/index.html">商品</a></li>
-            <li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>
-            <li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>
-			<li><a href="{:get_index_url()}" target="_blank">前台</a></li>
+            <li><a href="{:U('Goods/index/cate_id/151')}">积分礼品</a></li>
+            <li><a href="{:U('Goods/index/cate_id/152')}">礼品活动</a></li>
+            <li><a href="{:U('Goods/index/cate_id/153')}">积分换券</a></li>
+            <li><a href="{:U('User/index')}">用户</a></li>
+            <li><a href="{:get_index_url()}" target="_blank">前台</a></li>
+
+            <!--<li class=""><a href="/admin.php?s=/Goods/index.html">商品</a></li>-->
+            <!--<li class=""><a href="/admin.php?s=/User/index.html">用户</a></li>-->
+            <!--<li class=""><a href="/admin.php?s=/Order/index.html">订单</a></li>-->
+			<!--<li><a href="{:get_index_url()}" target="_blank">前台</a></li>-->
         </ul>
         <!-- /主导航 -->
 
@@ -46,8 +52,8 @@
             <a href="javascript:;" class="user-entrance"><i class="icon-user"></i></a>
             <ul class="nav-list user-menu hidden">
                 <li class="manager">你好，<em title="{:session('user_auth.username')}">{:session('user_auth.username')}</em></li>
-                <li><a href="{:U('User/updatePassword')}">修改密码</a></li>
-                <li><a href="{:U('User/updateNickname')}">修改昵称</a></li>
+                <!--<li><a href="{:U('User/updatePassword')}">修改密码</a></li>-->
+                <!--<li><a href="{:U('User/updateNickname')}">修改昵称</a></li>-->
                 <li><a href="{:U('Public/logout')}">退出</a></li>
             </ul>
         </div>
@@ -113,8 +119,8 @@
         </div>
         <div class="cont-ft">
             <div class="copyright">
-                <div class="fl">感谢使用<a href="http://www.yershop.com" target="_blank">YerShop</a>商城系统</div>
-                <div class="fr">V{$Think.const.ONETHINK_VERSION}</div>
+
+                <div class="fr">ThinkPHP</div>
             </div>
         </div>
     </div>

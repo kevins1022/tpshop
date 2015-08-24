@@ -1,0 +1,44 @@
+
+    <!-- 子导航 -->
+    <?php if($_GET['cate_id']==151): ?>
+    <div id="subnav" class="subnav">
+        <h3>
+            <i class="icon icon-fold"></i>
+            <a class="item" href="{:U('Goods/index/cate_id/151')}">积分礼品</a>
+        </h3>
+
+        <h3>
+            <i class="icon icon-fold"></i>
+            <a class="item" href="{:U('goods/shopOrder/cate_id/151')}">订单管理</a>
+        </h3>
+    </div>
+
+
+    <?php elseif($_GET['cate_id']==152): ?>
+    <div id="subnav" class="subnav">
+        <h3>
+            <i class="icon icon-fold"></i>
+            <a class="item" href="{:U('Goods/index/cate_id/152')}">积分活动</a>
+        </h3>
+
+        <h3>
+            <i class="icon icon-fold"></i>
+            <a class="item" href="{:U('goods/shopOrder/cate_id/152')}">订单管理</a>
+        </h3>
+    </div>
+
+    <?php else: ?>
+    <div id="subnav" class="subnav">
+        <h3>
+            <i class="icon icon-fold"></i>
+            <a class="item" href="{:U('Goods/index/cate_id/153')}">积分券添加</a>
+        </h3>
+
+        <h3>
+            <i class="icon icon-fold"></i>
+            <a class="item" href="{:U('Goods/listQuan')}">生成积分券</a>
+        </h3>
+
+    </div>
+    <?php endif; ?>
+
