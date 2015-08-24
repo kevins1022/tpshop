@@ -8,6 +8,8 @@
 
 <script type="text/javascript" src="/Public/Jf/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Jf/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Public/Jf/layer/layer.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.flexslider').flexslider({
@@ -67,15 +69,16 @@
             <table align="center">
                 <tbody><tr height="45">
                     <td align="right">新密码：</td>
-                    <td colspan="3"><input type="password" class="textbox1" placeholder="新密码"></td>
+                    <td colspan="3"><input type="password" name="password" class="textbox1" placeholder="新密码"></td>
                 </tr>
                 <tr height="45">
                     <td align="right">确认密码：</td>
-                    <td colspan="3"><input type="password" class="textbox1" placeholder="确认密码"></td>
+                    <td colspan="3"><input type="password" name="repassword" class="textbox1" placeholder="确认密码"></td>
                 </tr>
                 <tr height="55">
                     <td align="right">&nbsp;</td>
-                    <td colspan="3"><a href="forget4.html"><div class="btn">确定</div></a></td>
+                    <td colspan="3"><a href="javascript:;">
+                        <div class="btn" id="submit">确定</div></a></td>
                 </tr>
                 </tbody></table>
             <script>
@@ -85,6 +88,32 @@
                 $("input").blur(function(){
                     $(this).css('border-color','#b3b3b3');
                 });
+                $("#submit").click(function(){
+                    var password = $("input[name='password']").val();
+                    var repassword = $("input[name='repassword']").val();
+                    if(password != repassword){
+                        layer.alert("两次密码不一样",{icon:5});
+                        return false;
+
+
+                    }else{
+                        $.ajax({
+                            data:{password:password},
+                            url:"<?php echo U('forget3_ajax');?>",
+                            type:"POST",
+                            success:function(msg){
+                                if(msg == 1){
+                                    window.location.href="<?php echo U('forget4');?>";
+
+                                }else{
+                                    layer.alert("服务器错误",{icon:5});
+                                }
+
+                            }
+                        });
+                    }
+                });
+
             </script>
         </div><!--forget end-->
     </div>

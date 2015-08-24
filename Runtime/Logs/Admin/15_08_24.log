@@ -9365,3 +9365,37 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
 
+[ 2015-08-24T14:28:36+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003794s ]
+
+[ 2015-08-24T14:28:36+08:00 ] 127.0.0.1 /admin.php?s=/Goods/index/cate_id/151.html
+SQL: SHOW COLUMNS FROM `tpshop_auth_group_access` [ RunTime:0.0081s ]
+SQL: SELECT `extend_id` FROM tpshop_auth_group_access g INNER JOIN tpshop_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `tpshop_category` WHERE `status` = 1 AND `ismenu` <= 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid` FROM `tpshop_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: groups /Applications/XAMPP/xamppfiles/htdocs/tpshop/Application/Common/Common/function.php 第 660 行.
+SQL: SHOW COLUMNS FROM `tpshop_model` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_document` [ RunTime:0.0057s ]
+SQL: SELECT `name` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '151' AND `pid` = 0 AND `model_id` > 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid`,DOCUMENT.id FROM tpshop_document DOCUMENT INNER JOIN tpshop_document_product product ON DOCUMENT.id=product.id  WHERE `status` IN ('0','1','2') AND `category_id` = '151' AND `pid` = 0 AND `model_id` > 3 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT `extend` FROM `tpshop_model` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `tpshop_attribute` WHERE `model_id` IN ('5','1')  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+

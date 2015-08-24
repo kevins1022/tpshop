@@ -8,6 +8,8 @@
 
 <script type="text/javascript" src="/Public/Jf/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Jf/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Public/Jf/layer/layer.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.flexslider').flexslider({
@@ -68,12 +70,13 @@
             <table align="center">
                 <tbody><tr height="45">
                     <td align="right">验证码：</td>
-                    <td width="153"><input type="text" class="textbox2" placeholder="验证码"></td>
+                    <td width="153"><input type="text" id="email_yzm" class="textbox2" name="email_yzm" placeholder="验证码"></td>
                     <td colspan="2"><a href=""><div class="btn2">重新发送</div></a></td>
                 </tr>
                 <tr height="55">
                     <td align="right">&nbsp;</td>
-                    <td colspan="3"><a href="forget3.html"><div class="btn">下一步</div></a></td>
+                    <td colspan="3"><a href="javascript:;">
+                        <div class="btn" id="submit">下一步</div></a></td>
                 </tr>
                 </tbody></table>
             <script>
@@ -82,6 +85,28 @@
                 });
                 $("input").blur(function(){
                     $(this).css('border-color','#b3b3b3');
+                });
+                $("#submit").click(function(){
+                    var email_yzm = $("#email_yzm").val();
+                    if(email_yzm == ''){
+                        layer.alert("验证码不能为空", {icon:5});
+                        return false;
+
+                    }
+                    $.ajax({
+                        url:"<?php echo U('forget2_ajax');?>",
+                        data:{email_yzm:email_yzm},
+                        type:'POST',
+                        success: function (msg) {
+                            if(msg == 2){
+                                layer.alert("验证码错误", {icon:5});
+
+                            }else if(msg == 1){
+                                window.location.href="<?php echo U('forget3');?>"
+
+                            }
+                        }
+                    });
                 });
             </script>
         </div><!--forget end-->

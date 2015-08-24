@@ -1418,12 +1418,12 @@ function check_category_model($info){
             Vendor('PHPMailer.PHPMailer');     
             $mail = new \vendor\PHPMailer\PHPMailer(); //实例化
             $mail->IsSMTP(); // 启用SMTP
-            $mail->Host=C('MAIL_HOST'); //smtp服务器的名称（这里以QQ邮箱为例）
+            $mail->Host="smtp.qq.com"; //smtp服务器的名称（这里以QQ邮箱为例）
             $mail->SMTPAuth = true; //启用smtp认证
-            $mail->Username = C('MAIL_USERNAME'); //你的邮箱名
-            $mail->Password = C('MAIL_PASSWORD') ; //邮箱密码
-            $mail->From = C('MAIL_FROM'); //发件人地址（也就是你的邮箱地址）
-            $mail->FromName = C('MAIL_FROMNAME'); //发件人姓名
+            $mail->Username = 'mawanqing@bodocn.cn'; //你的邮箱名
+            $mail->Password = 'MWQ0818..' ; //邮箱密码
+            $mail->From = 'mawanqing@bodocn.cn'; //发件人地址（也就是你的邮箱地址）
+            $mail->FromName = '中象科技'; //发件人姓名
             $mail->AddAddress($to,"尊敬的客户");
             $mail->WordWrap = 50; //设置每行字符长度
             $mail->IsHTML(TRUE); // 是否HTML格式邮件

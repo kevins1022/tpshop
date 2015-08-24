@@ -157,6 +157,10 @@ class UserController extends HomeController
      * 订单中心
      */
     public function ordList(){
+        $uid = session('userId');
+
+        $jforder = M("jforder")->order("id desc")->where("uid=$uid")->select();
+        $this->data = $jforder;
         $this->display();
 
     }
@@ -187,7 +191,7 @@ class UserController extends HomeController
             $res = M('member')->add($data);
             //var_dump($res);
             if ($res) {
-                session('nickname',$data['username']);
+                session('nickname',$data['nickname']);
                 session('userId',$res['uid']);
                 $this->success("注册成功！", U('User/index'));
             } else {
@@ -237,6 +241,9 @@ class UserController extends HomeController
         if (!empty(session('nickname'))) {
             session('nickname',null);
             session('userId',null);
+            $_SESSION = array();
+            session_destroy();
+
             $this->success("退出成功！", U('User/login'));
         } else {
             $this->redirect("User/login");
@@ -268,26 +275,113 @@ class UserController extends HomeController
 
         $this->display();
     }
+    public function forget1_ajax(){
+        if(IS_AJAX){
+            extract($_POST);
+            if (!check_verify($verify)) {
+                echo 1; //1表示验证码错误
+                die();
+            }
+            $map['nickname'] = $email;
+            $row = M('member')->where($map)->find();
+            if(!$row){
+                echo 2;//用户不存在
+                die();
+
+            }
+            $rand = array_merge(range('a','z'),range(0,9));
+            $chars = join('',$rand);
+
+            $chars = str_shuffle($chars);
+            //var_dump($chars);
+            $chars = substr($chars,0,6);
+
+            session('mail_yzm', $chars);
+            session('user_email',$email);
+            $res = sendMail($email,"验证码",$chars);
+            if($res){
+                echo 3;
+            }else{
+                echo 4;
+            }
+
+
+        }
+    }
 
     /**
      * 忘记密码第二步
      */
     public function forget2(){
+
+
         $this->display();
     }
+    public function forget2_ajax(){
+        if(IS_AJAX){
+            $mail_yzm = session('mail_yzm');
+//            var_dump($mail_yzm);
+//            var_dump($_POST['email_yzm']);
+            if($mail_yzm == $_POST['email_yzm']){
+                session('pass_2','true');
+                echo 1;//验证码验证成功
+
+            }else{
+                echo 2;//验证码验证失败
+            }
+
+        }else{
+            $this->error("非法请求");
+        }
+    }
+
 
     /**
      * 忘记密码第三步
      */
     public function forget3(){
-        $this->display();
+        if(session('pass_2')=='true'){
+
+            $this->display();
+
+        }else{
+            $this->error("非法请求");
+        }
+
+
+    }
+    public function forget3_ajax(){
+        if(IS_AJAX){
+            $data['password'] = md5($_POST['password']);
+            $map['nickname'] = session('user_email');
+
+            $row = M('member')->where($map)->save($data);
+            if($row){
+
+                session('pass_3', 'true');
+                echo 1;
+
+            }else{
+                echo 2;
+            }
+
+        }else{
+            $this->error("非法请求");
+        }
     }
 
     /**
      * 忘记密码第四步
      */
     public function forget4(){
-        $this->display();
+        if(session('pass_3')=='true'){
+            $_SESSION=array();
+            session_destroy();
+            $this->display();
+        }else{
+            $this->error("非法请求");
+        }
+
     }
 
 

@@ -8,6 +8,8 @@
 
 <script type="text/javascript" src="/Public/Jf/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/Public/Jf/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Public/Jf/layer/layer.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.flexslider').flexslider({
@@ -63,30 +65,60 @@
         </div><!--position end-->
         <div class="forget">
             <div class="tit">找回密码</div>
+            <form action="" id="forget_form">
             <div class="pic" align="center"><img src="/Public/Jf/images/forget_01.png"></div>
             <table align="center">
                 <tbody><tr height="45">
                     <td align="right">帐号：</td>
-                    <td colspan="3"><input type="text" class="textbox1" placeholder="邮箱/手机号"></td>
+                    <td colspan="3"><input type="text" name="email" class="textbox1" placeholder="邮箱"></td>
                 </tr>
                 <tr height="45">
                     <td align="right">验证码：</td>
-                    <td width="153"><input type="text" class="textbox2" placeholder="验证码"></td>
-                    <td><img src="<?php echo U('User/verify');?>" class="yzm" id="yzm"></td>
-                    <!--<td><a href="" class="change">换一张</a></td>-->
+                    <td width="153"><input type="text" class="textbox2" name="verify" placeholder="验证码"></td>
+                    <td><img src="<?php echo U('verify');?>" class="yzm" id="yzm" style="cursor: pointer"></td>
+
                 </tr>
                 <tr height="55">
                     <td align="right">&nbsp;</td>
-                    <td colspan="3"><a href="forget2.html"><div class="btn">下一步</div></a></td>
+                    <td colspan="3"><a href="javascript:;">
+                        <div class="btn" id="next">下一步</div></a></td>
                 </tr>
                 </tbody></table>
+            </form>
             <script>
                 $("input").focus(function(){
                     $(this).css('border-color','#ff0000');
                 });
                 $("input").blur(function(){
                     $(this).css('border-color','#b3b3b3');
-                });]
+                });
+                $("#yzm").click(function(){
+                    $("#yzm").attr('src',$("#yzm").attr('src')+"&random="+Math.random());
+                });
+                $("#next").click(function(){
+                    //if(){}
+                    var data = $("#forget_form").serialize();
+                    $.ajax({
+                        url:"<?php echo U('forget1_ajax');?>",
+                        data:data,
+                        type:'POST',
+                        success:function(msg){
+                            if(msg == 1){
+                                layer.alert("验证码错误",{icon:5});
+
+                            }else if(msg == 2){
+                                layer.alert("用户不存在",{icon:5});
+
+
+                            }else if(msg ==3){
+                                window.location.href="<?php echo U('forget2');?>";
+                            }else{
+                                layer.alert("服务器错误", {icon:5})
+                            }
+
+                        }
+                    });
+                });
             </script>
         </div><!--forget end-->
     </div>
